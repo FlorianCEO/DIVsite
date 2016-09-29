@@ -1,0 +1,62 @@
+	<div class="block">
+        <div class="container">
+          <br>
+          <h1>Le Blog</h1>
+          <p> de l'agence Design is Vital</p>
+        </div>
+    </div>  
+
+    <div class="prerow">
+        <h1> Apprendre tous les jours comment maitriser l'UX </h1>
+        <p>et découvrez des trics de designer !</p>
+    </div>
+
+<div class="bodyprojet">
+
+<!-- ancienne disposition -->
+<!-- 
+<% @articles.limit(15).in_groups_of(3, false).each do |group| %>
+<div class="container">
+    <div class="row">
+    <% group.each do |article| %>
+        <div class="col-sm-6 col-md-4">
+          <a href="<%= article_path(article.slug) %>"><div class="thumbnail">
+            <img src="<%= article.image.url(:thumb) %>" alt="<% article.title %>">
+              <div class="caption">
+                <h3><%= article.title %></h3>
+                <p><%= truncate(article.description, length: 90, escape: false) %> </p>
+                <p><a href="<%= articles_path(article.slug) %>" class="btn btn-primary" role="button">Voir le projet</a>
+              </div>
+          </div></a>
+        </div>
+        <% end %>
+    </div>
+  </div>
+<% end %>
+-->
+
+</div>
+
+<div class="bodyprojet">
+    <% @articles.order(position: :desc).each do |article| %>
+    <ul class="list-unstyled">
+        <li class="product">
+          <div class="product-upvote text-center">
+            <i class="fa fa-caret-up"></i>
+            <p><%= article.position %></p>
+          </div>
+
+          <a href="<%= articles_path(article.slug) %>"><img src="<%= article.image.url(:thumb) %>" alt="<% article.title %>" class="product-image img-rounded"> </a>
+
+          <div class="product-description">
+            <!-- <h4 style="font-weight:400;color:#979797"><%= article.title %></h4>-->
+            <h4><%= article.soustitre %></h4>
+            <p style="color:#979797"><%= truncate(article.description, length: 90, escape: false) %> </p>
+             <!--<p> Par <span style="color:#BABABA;"><%= article.user.name %></span>-->
+            <br>
+            <a class="styla" href="<%= articles_path(article.slug) %>">Lire l'article</a>
+          </div>
+        </li>
+    </ul>
+  <% end %>  
+</div>

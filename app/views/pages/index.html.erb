@@ -1,0 +1,170 @@
+      <video id="video-background" preload muted autoplay loop>
+        <source src="http://media.istockphoto.com/videos/business-people-architecture-and-team-work-concept-close-up-of-team-video-id498510508">
+      </video>
+
+     <div class="jumbotron">
+        <div class="container">
+          <img class="logosmg" alt="logo designisvital" src="logo2.png">
+            <div class="wrapper">
+              <h1><span class="focus">Agence spécialisée en design <br>d'expérience utilisateur</span></h1>
+            </div>
+            <p><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>Application Web et Mobile - Design d'Expériences et d'Interfaces. </p> 
+        </div>
+      </div>
+
+      
+        <div class="logosbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                <a href="#"><img src="clientlogo-04.png" alt="" class="logocustomers"></a>
+              </div>
+              <div class="col-md-2">
+                <a href="#"><img src="clientlogo-05.png" alt="" class="logocustomers"></a>
+              </div>
+              <div class="col-md-2">
+                <a href="#"><img src="clientlogo-08.png" alt="" class="logocustomers"></a>
+              </div>
+              <div class="col-md-2">
+                <a href="#"><img src="clientlogo-06.png" alt="" class="logocustomers"></a>
+              </div>
+              <div class="col-md-2">
+                <a href="#"><img src="clientlogo-03.png" alt="" class="logocustomers"></a>
+              </div>
+              <div class="col-md-2">
+                <a href="#"><img src="clientlogo-02.png" alt="" class="logocustomers"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+      
+
+        <div class="container">
+        <div class="prerow">
+              <h1>Nous designons la meilleure expérience pour vos utilisateurs. </h1>
+              <p>Et nous développons le dispositif digitale adapté à vos besoins.</p>
+        </div>
+
+        <div class="rowhome">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="picto_uxdesign.png" alt="" class="logocustomers">
+            <h2>UX DESIGN</h2>
+          </div>
+          <div class="col-md-4">
+            <br>
+            <img src="picto_uidesign.png" alt="" class="logocustomers">
+             <br>
+              <br>
+            <h2>IDENTITÉ VISUELLE</h2>
+          </div>
+          <div class="col-md-4">
+             <br>
+            <img src="picto_brandidentity.png" alt="" class="logocustomers">
+             <br> <br>
+            <h2>WEB/APP</h2>
+          </div>
+        </div>
+        </div>
+        </div>
+
+        <hr>  
+
+      
+      <div class="projetshome">
+        <div class="container">
+
+              <div class="row">
+                <div class="col-md-6 pull-left">
+                  <h2> Refonte de l'application Kliner </h2>
+                  <br>
+                  <p> L'application Kliner permet de réserver son aide ménagère de manière ultra simple, en quelques clics. Design is Vital a accompagné l'équipe Kliner dans cette refonte en designant les 130 écrans de l'app. Tous les états de l'interface ont été prévues et imaginées de manière à gérer l'intégralité de l'expérience utilisateur. </p>
+
+                  <a class="btn btn-primary btn-lg" href="/methode" role="button">DÉCOUVRIR LE PROJET KLINER</a>
+
+                  <div class="testimonial">
+                    <img src="Kliner.png" alt="" class="logoauthor">
+                    <p><i>"J'ai apprécié la très grande réactivité de Design is Vital et leur capacité à proposer la meilleure expérience."</i></p>
+                      <div class="client">
+                        <img src="brice.png" class="left author">
+                        <h5>Brice William Ngouo, Président @Kliner</h5>
+                      </div>
+                  </div>
+                </div>
+
+                <br>
+
+                <div class="col-md-6 pull-right">
+
+                  <!--<iframe src="//giphy.com/embed/GHEZK19qmx5te" width="480" height="853" frameBorder="0" class="giphy-embed projetshomeimg" allowFullScreen></iframe>-->
+                  <img src="ProjetKliner2.png" class="projetshomeimg">
+
+                </div>
+
+              </div>
+           </div>
+        </div>   
+      </div> 
+
+
+      <hr>
+
+
+      <div class="prerow">
+          <h1>Les derniers projets de l'agence </h1>
+          <p>Notre prochain projet sera peut-être le vôtre</p>
+      </div>
+
+
+    
+      <div class="bodyprojet">
+          <% @Projets.limit(15).in_groups_of(3, false).each do |group| %>
+              <div class="row">
+                <% group.each do |projet| %>
+                    <div class="col-sm-6 col-md-4">
+                      <a href="<%= projet_path(projet.slug) %>">
+                        <div class="thumbnail">
+                          <img src="<%= projet.image.url(:medium) %>" alt="<% projet.title %>">
+                          <span class="text"><span class="glyphicon glyphicon-eye-open"></span>Voir le projet</span>
+                        </div>
+                      </a>
+                    </div>
+                <% end %>
+              </div>
+          <% end %>
+      </div>
+
+      <hr>
+
+      <div class="wrapper">
+        <div class="prerow2">
+          <h1>Chaque semaine des articles pour vous</h1>
+          <p>Découvrez des techniques, des outils et des astuces</p>
+        </div>
+        <div class="container">
+        <% @articles.last(3).in_groups_of(3, false).each do |group| %>
+            <div class="row">
+              <% group.each do |article| %>
+                  <div class="col-xs-12 col-sm-4">
+                      <a href="<%= articles_path(article.slug) %>"><div style="background: linear-gradient(-225deg, rgba(30,30,30,0.6) 30%, rgba(46,46,46,0.5) 80%), url('<%= article.image.url(:thumb) %>');" class="card">
+                        <img src="<%= article.user.image.url(:thumb) %>" alt="" class="avatar-small card-user">
+                      <div class="card-description">
+                        <h3><%= article.title %></h3>
+                        <p><%= truncate(article.soustitre, length: 45, escape: false) %></p>
+                        </div>
+                      </div>
+                  </div></a>
+                <% end %>
+            </div>
+          <% end %>
+        </div>
+    </div>
+
+
+
+
+
+      
+

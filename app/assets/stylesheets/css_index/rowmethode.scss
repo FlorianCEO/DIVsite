@@ -1,0 +1,168 @@
+$maincolor:#FFED00;
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+/* Style du bouton de Call to Action */
+	
+	.rowmethode .row .col-md-4 p a.btn {
+		color:#979797;
+		border:1px solid $maincolor;
+		font-size: 12px;
+		}
+
+	.rowmethode .row .col-md-4 p a.btn:hover {
+		background-color: $maincolor;
+		color:white;
+	}
+
+/* Style du titre et sous titre */
+
+	.rowmethode .row .col-md-4 p {
+		line-height: 25px !important;
+	}
+
+	.rowmethode .row .col-md-4 h2 {
+		line-height: 30px !important;
+		color:#979797;
+		font-size: 20px;
+		font-weight: lighter;
+		letter-spacing: 2px;
+		padding-bottom: 10px;
+	}
+
+
+	.rowmethode .row {
+		padding-bottom: 50px;
+		padding-top: 30px;
+	}
+
+	.rowmethode .row .col-md-4  {
+		padding-left:35px;
+		padding-right:35px;
+		text-align: left;
+	}
+
+	/* ROW "methodesux" */
+
+
+	.methodesux .row  {
+		padding-bottom: 50px;
+		padding-top: 30px;
+		margin-top: 30px;
+
+	}
+
+	.methodesux .row .col-md-4 h2 {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 60px !important;
+	}
+
+	.methodesux .row .col-md-4 p {
+		line-height: 25px !important;
+	}
+
+	.methodesux .row .col-md-4  {
+		padding-left:35px;
+		padding-right:35px;
+		text-align: center;
+	}
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+		/* ROW "methodesux" */
+
+
+	.methodesux .row  {
+		padding-bottom: 50px;
+		padding-top: 30px;
+		margin-top: 30px;
+
+	}
+
+	.methodesux .row .col-md-4 h2 {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 60px !important;
+	}
+
+	.methodesux .row .col-md-4 p {
+		line-height: 25px !important;
+	}
+
+	.methodesux .row .col-md-4  {
+		padding-left:35px;
+		padding-right:35px;
+		text-align: center;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+		/* ROW "methodesux" */
+
+
+	.methodesux .row  {
+		padding-bottom: 50px;
+		padding-top: 30px;
+		margin-top: 30px;
+
+	}
+
+	.methodesux .row .col-md-4 h2 {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 60px !important;
+	}
+
+	.methodesux .row .col-md-4 p {
+		line-height: 25px !important;
+	}
+
+	.methodesux .row .col-md-4  {
+		padding-left:35px;
+		padding-right:35px;
+		text-align: center;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) { 
+
+		/* ROW "methodesux" */
+
+
+	.methodesux .row  {
+		padding-bottom: 50px;
+		padding-top: 30px;
+		margin-top: 30px;
+
+	}
+
+	.methodesux .row .col-md-4 h2 {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 60px !important;
+	}
+
+	.methodesux .row .col-md-4 p {
+		line-height: 25px !important;
+	}
+
+	.methodesux .row .col-md-4  {
+		padding-left:35px;
+		padding-right:35px;
+		text-align: center;
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+}
+
+

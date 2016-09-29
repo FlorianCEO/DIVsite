@@ -1,0 +1,112 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+	/* Style baseline au dessus de la row */
+	.prerow2 {
+		text-align: center;
+		padding-top:50px;
+		padding-bottom: 30px;
+		line-height: 50px;
+
+		h1 {
+			font-size: 30px;
+			color:#000000;
+	  		font-weight: 200;
+		}
+
+		p {
+			font-size: 16px;
+			color:#6f6f6f;
+		}
+	}
+}
+
+
+
+
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	/* Style baseline au dessus de la row */
+	.prerow2 {
+		text-align: center;
+		padding-top:50px;
+		padding-bottom: 30px;
+		line-height: 50px;
+
+	}
+	.prerow2 h1 {
+		font-size: 30px;
+		color:#000000;
+  		font-weight: 200;
+	}
+
+	.prerow2 p {
+		font-size: 16px;
+		color:#6f6f6f;
+	}
+
+
+}
+
+
+
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	/* Style baseline au dessus de la row */
+	.prerow2 {
+		text-align: center;
+		padding-top:50px;
+		padding-bottom: 30px;
+		line-height: 50px;
+
+	}
+	.prerow2 h1 {
+		font-size: 30px;
+		color:#000000;
+  		font-weight: 200;
+	}
+
+	.prerow2 p {
+		font-size: 16px;
+		color:#6f6f6f;
+	}
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+	/* Style baseline au dessus de la row */
+	.prerow2 {
+		text-align: center;
+		padding-top:50px;
+		padding-bottom: 30px;
+		line-height: 50px;
+
+	}
+	.prerow2 h1 {
+		font-size: 30px;
+		color:#000000;
+  		font-weight: 200;
+	}
+
+	.prerow2 p {
+		font-size: 16px;
+		color:#6f6f6f;
+	}
+
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}

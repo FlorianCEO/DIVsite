@@ -1,0 +1,304 @@
+$primarycolor:#FFF;
+$secondarycolor:#FFED00 ;
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+
+	/* Lien des boutons de navigation du menu*/
+	nav.navbar.navbar-default {
+		margin-bottom: 0px !important;
+		background:transparent;
+		position:absolute;
+		top:20px;
+		border:none;
+		left:50px;
+
+		#navbar {
+
+			ul.nav {
+				letter-spacing: 2px;
+				padding-left:200px;
+				padding-top: 3px;
+
+				li {
+
+					a {
+						color:$primarycolor !important;
+						opacity: 0.8;
+						font-size: 12px;
+
+						&:hover {
+							color: $primarycolor !important;
+							opacity: 1;
+						}
+					}
+				}			
+			}
+		}	
+	}
+
+	.social {
+		li {
+			text-decoration: none;
+			display: inline-block;
+			position: relative;
+			top:16px;
+			padding-left: 15px;
+			
+			a {
+				color:$secondarycolor !important;
+				font-size: 18px;
+				opacity: 1;
+				
+				&:hover {
+					color:$secondarycolor !important;
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+
+
+	/* Style du logo */
+	nav.navbar .navbar-header a.navbar-brand img {
+		height: auto;
+		width: 110px;
+	}
+
+
+	/* Style si nom du site = texte */
+
+	/*nav.navbar .navbar-header a.navbar-brand {
+		color:$primarycolor;
+		opacity: 0.8;
+	}
+		
+	nav.navbar .navbar-header a.navbar-brand:hover {
+		color:$primarycolor;
+		opacity: 1;
+	}*/
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	
+	/* Style global de la navbar */
+	nav.navbar.navbar-default {
+		margin-bottom: 0px !important;
+		background:transparent;
+		position:absolute;
+		top:20px;
+		border:none;
+		left:50px;
+	}
+	
+
+	/* Lien des boutons de navigation du menu*/
+	nav.navbar #navbar ul.nav li a {
+		color:$primarycolor !important;
+		opacity: 0.8;
+		font-size: 12px;
+	}
+
+	nav.navbar #navbar ul.nav li a:hover {
+		color: $primarycolor !important;
+		opacity: 1;
+	}
+
+	ul.nav {
+		letter-spacing: 2px;
+		padding-left:0px;
+		padding-top: 2px;
+	} 
+
+
+	/* Style si nom du site = texte */
+	/*nav.navbar .navbar-header a.navbar-brand {
+		color:$primarycolor;
+		opacity: 0.8;
+	}
+		
+	nav.navbar .navbar-header a.navbar-brand:hover {
+		color:$primarycolor;
+		opacity: 1;
+	}*/
+
+
+
+	/* Style du logo */
+	nav.navbar .navbar-header a.navbar-brand img {
+		display: none;
+	}
+
+
+	/* Style du bouton de Call to Action */
+	#navbar .navbar-form .btn {
+		color:$primarycolor;
+		border: 2px solid $primarycolor;
+		border-radius: 50px;
+		font-size: 11px !important;
+		padding: 8px 25px;
+		background: none !important;
+		opacity: 0.8;
+	}
+
+	#navbar .navbar-form .btn:hover {
+		opacity: 1;
+		color:#F9F9F9;
+	}
+
+}
+
+
+
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	/* Style global de la navbar */
+	nav.navbar.navbar-default {
+		margin-bottom: 0px !important;
+		background:transparent;
+		position:absolute;
+		top:20px;
+		border:none;
+		left:100px;
+	}
+	
+
+	/* Lien des boutons de navigation du menu*/
+	nav.navbar #navbar ul.nav li a {
+		color:$primarycolor !important;
+		opacity: 0.8;
+		font-size: 12px;
+	}
+
+	nav.navbar #navbar ul.nav li a:hover {
+		color: $primarycolor !important;
+		opacity: 1;
+	}
+
+	ul.nav {
+		letter-spacing: 2px;
+		padding-top: 2px;
+	} 
+
+
+	/* Style si nom du site = texte */
+	/*nav.navbar .navbar-header a.navbar-brand {
+		color:$primarycolor;
+		opacity: 0.8;
+	}
+		
+	nav.navbar .navbar-header a.navbar-brand:hover {
+		color:$primarycolor;
+		opacity: 1;
+	}*/
+
+
+
+	/* Style du logo */
+	nav.navbar .navbar-header a.navbar-brand img {
+		display: none;
+	}
+
+
+	/* Style du bouton de Call to Action */
+	#navbar .navbar-form .btn {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+	/* Style global de la navbar */
+	nav.navbar.navbar-default {
+		background:transparent;
+		position:absolute;
+		border:none;
+
+	}
+	
+
+	/* Lien des boutons de navigation du menu*/
+	nav.navbar #navbar ul.nav li a {
+		color:#979797 !important;
+		opacity: 0.8;
+		font-size: 12px;
+
+	}
+
+	nav.navbar #navbar ul.nav li a:hover {
+		color: #979797 !important;
+		opacity: 1;
+	}
+
+	ul.nav {
+		letter-spacing: 2px;
+		padding-top: 2px;
+	} 
+
+
+
+	/* Style du logo */
+	nav.navbar .navbar-header a.navbar-brand img {
+		display: none;
+	}
+
+
+	/* Style du bouton de Call to Action */
+	#navbar .navbar-form .btn {
+		display: none;
+	}
+
+
+
+	/* Style du bouton sur mobile */
+	.navbar-toggle {
+		background-color:transparent !important;
+		border:1px solid #797979 !important;
+		position: fixed;
+		right:10px;
+		top:10px;
+		z-index: 100;
+
+	}
+
+	.navbar-toggle.collapsed {
+		border:1px solid $primarycolor !important;
+	}
+
+	.navbar-toggle.collapsed span.icon-bar {
+		border:1px solid $primarycolor !important;
+	}
+
+
+	.navbar-collapse {
+		background-color: $primarycolor;
+		position: fixed;
+		width: 100%;
+		top:0;
+	}
+
+	.navbar-form {
+		display: none;
+	}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}

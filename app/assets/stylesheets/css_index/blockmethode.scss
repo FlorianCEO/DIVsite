@@ -1,0 +1,223 @@
+$maincolor:#1F98FF;
+$textcolor:#FFF;
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+	.block {
+		background-position: cover;
+		height: 49vh;	
+		width: 100%;
+		left:0 auto;
+		right:0 auto;
+		line-height: 50px;
+		display: flex;
+		align-items: center;
+		background: linear-gradient(-190deg, rgba(51,51,51,0.6) 0%, rgba(51,51,51,0.6) 80%), url("http://unsplash.it/1280/500/?image=816");
+
+		.container {
+			color:$textcolor;
+			font-weight: bold;
+			text-align:center; 
+		}
+	
+		a {
+			color:$textcolor;
+			background-color: $maincolor;
+			border:none;
+			opacity: 0.8;
+
+			&:hover {
+				color:$textcolor;
+				opacity: 1;
+			}
+		}
+
+
+		h1 {
+			font-size: 35px;
+			font-weight: 100;
+		}
+
+
+		p {
+			font-weight: lighter;
+			font-size: 18px;
+		}
+
+		.btn {
+			border-radius: 50px;
+			font-size: 12px !important;
+			padding: 15px 35px;
+		}
+	}
+}
+
+
+
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.block {
+		background-position: cover;
+		height: 49vh;	
+		width: 100%;
+		left:0 auto;
+		right:0 auto;
+		line-height: 50px;
+		display: flex;
+		align-items: center;
+		background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/500/?image=846");
+	}
+
+	.block .container {
+		color:$textcolor;
+		font-weight: bold;
+		text-align:center; 
+	}
+
+	.block a {
+		color:$textcolor;
+		background-color: #1F98FF;
+		border:none;
+		opacity: 0.8;
+	}
+
+	.block a:hover {
+		color:$textcolor;
+		opacity: 1;
+
+	}
+
+	.block h1 {
+		font-size: 35px;
+		font-weight: 100;
+
+	}
+
+	.block p {
+		font-weight: lighter;
+		font-size: 18px;
+	}
+
+	.block .btn {
+		border-radius: 50px;
+		font-size: 12px !important;
+		padding: 15px 35px;
+	}
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) { 
+
+	.block {
+		background-position: cover;
+		height: 49vh;	
+		width: 100%;
+		left:0 auto;
+		right:0 auto;
+		line-height: 50px;
+		display: flex;
+		align-items: center;
+		background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/500/?image=846");
+	}
+
+	.block .container {
+		color:$textcolor;
+		font-weight: bold;
+		text-align:center; 
+	}
+
+	.block a {
+		color:$textcolor;
+		background-color: #1F98FF;
+		border:none;
+		opacity: 0.8;
+	}
+
+	.block a:hover {
+		color:$textcolor;
+		opacity: 1;
+
+	}
+
+	.block h1 {
+		font-size: 35px;
+		font-weight: 100;
+
+	}
+
+	.block p {
+		font-weight: lighter;
+		font-size: 18px;
+	}
+
+	.block .btn {
+		border-radius: 50px;
+		font-size: 12px !important;
+		padding: 15px 35px;
+	}
+	
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+	.block {
+		background-position: cover;
+		height: 49vh;	
+		width: 100%;
+		left:0 auto;
+		right:0 auto;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/500/?image=846");
+	}
+
+	.block .container {
+		color:$textcolor;
+		font-weight: bold;
+		text-align:center; 
+	}
+
+	.block a {
+		color:$textcolor;
+		background-color: #1F98FF;
+		border:none;
+		opacity: 0.8;
+	}
+
+	.block a:hover {
+		color:$textcolor;
+		opacity: 1;
+
+	}
+
+	.block h1 {
+		font-size: 27px;
+		font-weight: 100;
+
+	}
+
+	.block p {
+		font-weight: lighter;
+		font-size: 15px;
+	}
+
+	.block .btn {
+		border-radius: 50px;
+		font-size: 12px !important;
+		padding: 15px 35px;
+	}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}

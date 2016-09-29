@@ -1,0 +1,51 @@
+@import "bourbon";
+@import url('css_index/list.scss');
+@import url('css_index/logosbar.scss');
+@import url('css_index/navbar.scss');
+@import url('css_index/wrapper.scss');
+@import url('css_index/jumbotron.scss');
+@import url('css_index/cards.scss');
+@import url('css_index/avatar.scss');
+@import url('css_index/blockmethode.scss');
+@import url('css_index/row.scss');
+@import url('css_index/rowmethode.scss');
+@import url('css_index/prerow.scss');
+@import url('css_index/prerow2.scss');
+@import url('css_index/agence.scss');
+@import url('css_index/footer.scss');
+@import url('css_index/projetshome.scss');
+@import url('css_indexprojets/show.scss');
+@import url('css_indexprojets/bodyprojet.scss');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ */
+
+
+
+
+html, body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-weight: 200;
+	margin:8px;
+	background-color: #FFF;
+	z-index:10;
+	position: relative;
+}
+
+
+

@@ -1,0 +1,41 @@
+<div class="show">
+	<div class="block">
+	    <div class="container">
+	    	<br>
+	        <h1>Projets</h1>
+	        <p>Fait avec amour à Paris</p>
+	    </div>
+	</div>    
+
+	<br>
+	<div class="container">
+		<h1><%= @projet.title %></h1>
+		<br>
+		<p><%= @projet.description %></p>
+		<br>
+		<img src="<%= @projet.image.url(:medium) %>" alt="<% @projet.title %>">
+	</div>
+</div>
+
+<hr>
+
+     <div class="container">
+     	<div class="prerow">
+            <h1>Nous designons tous nos projets avec beaucoup d'amour </h1>
+            <p>Voici quelques uns de nos derniers projets</p>
+        </div>
+    </div>
+
+      <div class="bodyprojet">
+          <% @Projets.limit(3).in_groups_of(3, false).each do |group| %>
+              <div class="row">
+                <% group.each do |projet| %>
+                    <div class="col-sm-6 col-md-4">
+                      <a href="<%= projet_path(projet.slug) %>"><div class="thumbnail">
+                        <img src="<%= projet.image.url(:medium) %>" alt="<% projet.title %>">
+                      </div></a>
+                    </div>
+                <% end %>
+              </div>
+          <% end %>
+      </div>

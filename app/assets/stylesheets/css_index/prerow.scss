@@ -1,0 +1,207 @@
+$maincolor:#FFED00;
+$secondarycolor:#979797;
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+	/* Style baseline au dessus de la row */
+	.prerow {
+		text-align: center;
+		padding-top:50px;
+		padding-bottom: 30px;
+		line-height: 50px;
+
+		h1 {
+			font-size: 30px;
+			font-weight: 200;
+			color:$secondarycolor !important;
+		}
+
+
+		p {
+			font-size: 16px;
+			color:#6f6f6f;
+
+			a.btn {
+				font-size: 12px !important;
+				padding: 15px 35px;
+				border-radius: 50px;
+				font-size: 12px !important;
+				padding: 15px 35px;
+			}
+		}
+
+
+		a {
+			color:$secondarycolor;
+			background-color: $maincolor;
+			border:none;
+			opacity: 0.8;
+
+			&:hover {
+				opacity: 1;
+				background-color: $maincolor;
+				color:#000;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	/* Style baseline au dessus de la row */
+	.prerow {
+		text-align: center;
+		padding-top:50px;
+		padding-bottom: 30px;
+		line-height: 50px;
+
+	}
+	.prerow h1 {
+		font-size: 30px;
+		font-weight: 200;
+		color:$secondarycolor !important;
+	}
+
+	.prerow p {
+		font-size: 16px;
+		color:#6f6f6f;
+	}
+
+	.prerow a {
+		color:white;
+		background-color: $maincolor;
+		border:none;
+		opacity: 0.8;
+	}
+
+	.prerow a:hover {
+		opacity: 1;
+		background-color: $maincolor;
+	}
+
+	.prerow p a.btn {
+		font-size: 12px !important;
+		padding: 15px 35px;
+		border-radius: 50px;
+	}
+
+	.prerow p a.btn {
+		font-size: 12px !important;
+		padding: 15px 35px;
+	}
+
+
+}
+
+
+
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	/* Style baseline au dessus de la row */
+	.prerow {
+		text-align: center;
+		padding-top:50px;
+		padding-bottom: 30px;
+		line-height: 50px;
+
+	}
+	.prerow h1 {
+		font-size: 30px;
+		font-weight: 200;
+		color:$secondarycolor !important;
+	}
+
+	.prerow p {
+		font-size: 16px;
+		color:#6f6f6f;
+	}
+
+	.prerow a {
+		color:white;
+		background-color: $maincolor;
+		border:none;
+		opacity: 0.8;
+	}
+
+	.prerow a:hover {
+		opacity: 1;
+		background-color: $maincolor;
+	}
+
+	.prerow p a.btn {
+		font-size: 12px !important;
+		padding: 15px 35px;
+		border-radius: 50px;
+	}
+
+	.prerow p a.btn {
+		font-size: 12px !important;
+		padding: 15px 35px;
+	}
+
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+	/* Style baseline au dessus de la row */
+	.prerow {
+		text-align: center;
+		padding-top:50px;
+		padding-bottom: 30px;
+		line-height: 50px;
+
+	}
+	.prerow h1 {
+		font-size: 30px;
+		font-weight: 200;
+		color:$secondarycolor !important;
+	}
+
+	.prerow p {
+		font-size: 16px;
+		color:#6f6f6f;
+	}
+
+	.prerow a {
+		color:white;
+		background-color: $maincolor;
+		border:none;
+		opacity: 0.8;
+	}
+
+	.prerow a:hover {
+		opacity: 1;
+		background-color: $maincolor;
+	}
+
+	.prerow p a.btn {
+		font-size: 12px !important;
+		padding: 15px 35px;
+		border-radius: 50px;
+	}
+
+	.prerow p a.btn {
+		font-size: 12px !important;
+		padding: 15px 35px;
+	}
+
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}

@@ -1,0 +1,200 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+	.card {
+		position: relative;
+		height: 200px;
+		background-size: cover !important;
+		color: white;
+		border-radius: 0px;
+		transition: all 0.4s ease;
+		margin-top:30px;
+		margin-bottom:50px;
+
+		a {
+			color:#F2F2F2;
+
+		&:hover {
+			color:white;
+			text-decoration: none;
+			}
+		}
+
+		&:hover {
+			bottom:3px;
+			font-size:16px;
+		}
+	}
+
+
+	.card-user {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		border: 2px solid white;
+	}
+
+	.card-category {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	.card-description {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		text-align:left;
+	}
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.card {
+		position: relative;
+		height: 200px;
+		background-size: cover !important;
+		color: white;
+		border-radius: 4px;
+		transition: all 0.4s ease;
+		margin-top:30px;
+		margin-bottom:50px;
+	}
+
+	.card:hover {
+		bottom:3px;
+		font-size:16px;
+	}
+
+
+	.card-user {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		border: 2px solid white;
+	}
+
+	.card-category {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	.card-description {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		text-align:left;
+	}
+
+	.card a {
+		color:#F2F2F2;
+	}
+
+	.card a:hover {
+		color:white;
+		text-decoration: none;
+	}
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) { 
+
+
+	.card {
+		position: relative;
+		height: 200px;
+		background-size: cover !important;
+		color: white;
+		border-radius: 4px;
+		transition: all 0.4s ease;
+		margin-top:30px;
+		margin-bottom:50px;
+	}
+
+	.card:hover {
+		bottom:3px;
+		font-size:16px;
+	}
+
+
+	.card-user {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		border: 2px solid white;
+	}
+
+	.card-category {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	.card-description {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		text-align:left;
+	}
+
+	.card a {
+		color:#F2F2F2;
+	}
+
+	.card a:hover {
+		color:white;
+		text-decoration: none;
+	}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) { 
+
+
+	.card {
+		position: relative;
+		height: 200px;
+		background-size: cover !important;
+		color: white;
+		border-radius: 4px;
+		margin-top:5px;
+		margin-bottom:5px;
+	}
+
+
+	.card-user {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		border: 2px solid white;
+	}
+
+	.card-category {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	.card-description {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		text-align:left;
+	}
+
+	.card a {
+		color:#F2F2F2;
+	}
+
+
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
