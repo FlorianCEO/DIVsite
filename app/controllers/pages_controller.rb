@@ -8,6 +8,7 @@ class PagesController < ApplicationController
   end
 
   def methode
+    @disable_nav = true
   end
 
   def contact

@@ -26,7 +26,7 @@
     </head>
     <body>
 
-			<%= render "layouts/partials/nav" %>
+			<%= render "layouts/partials/nav" unless @disable_nav %>
 			<%= yield %>
 			<%= render "layouts/partials/footer" %>
 
