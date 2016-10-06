@@ -1,6 +1,7 @@
 <div class="show">
 	<div class="block">
 	    <div class="container">
+        <img class="logosmg" alt="logo designisvital" src="logo2.png">        
 	    	<br>
 	        <h1>Projets</h1>
 	        <p>Fait avec amour à Paris</p>
@@ -11,7 +12,7 @@
 	<div class="container">
 		<h1><%= @projet.title %></h1>
 		<br>
-		<p><%= @projet.description %></p>
+		<p><%= simple_format(@projet.description).html_safe %></p>
 		<br>
 		<img src="<%= @projet.image.url(:medium) %>" alt="<% @projet.title %>">
 	</div>

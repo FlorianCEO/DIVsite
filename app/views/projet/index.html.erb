@@ -1,5 +1,6 @@
 	<div class="block">
         <div class="container">
+          <img class="logosmg" alt="logo designisvital" src="logo2.png">
           <br>
           <h1>Nos Réalisations</h1>
           <p>Toutes nos réalisations sont faites avec amour </p>
@@ -14,10 +15,10 @@
 
 
 <div class="bodyprojet">
-  <% @Projets.limit(15).in_groups_of(3, false).each do |group| %>
+  <% @Projets.limit(15).in_groups_of(6, false).each do |group| %>
       <div class="row">
         <% group.each do |projet| %>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
               <a href="<%= projet_path(projet.slug) %>"><div class="thumbnail">
                 <img src="<%= projet.image.url(:medium) %>" alt="<% projet.title %>">
                 <span class="text"><span class="glyphicon glyphicon-eye-open"></span>Voir le projet</span>
@@ -27,3 +28,5 @@
       </div>
   <% end %>
 </div>
+
+

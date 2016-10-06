@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/article' => 'article#index'
   get '/article/:slug' => 'article#show', as: 'articles'
   get '/contact' => 'pages#contact'
+  get '/mentionslegales' => 'pages#mentionslegales'
+
 
   namespace :admin do
     resources :projets

@@ -3,9 +3,10 @@ $maincolor:#FFED00;
 .bodyprojet {
 	margin-right:5px;
 	margin-left: 5px;
+	box-sizing:border-box;
 
 	.row {
-		.col-md-4.col-sm-6 {
+		.col-lg-4.col-md-4.col-sm-6.col-xs-12 {
 			padding:0px;
 		}
 	}

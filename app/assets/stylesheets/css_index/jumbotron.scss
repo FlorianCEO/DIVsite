@@ -29,10 +29,8 @@ $textcolor:#FFF;
 			background: rgba(51,51,51,0.6);
 			position: absolute;
 			left:0;
-			padding-left:30px;
-			padding-top:5px;
-			padding-bottom:5px;
-			padding-right:30px;
+			padding-top:5px 30px 5px 30px;
+
 
 
 			h1 {
@@ -68,12 +66,13 @@ $textcolor:#FFF;
 			font-weight: lighter;
 			font-size: 25px;
 			position: relative;
-			padding-top: 120px;
+			margin-top: 20vh;
+			left:0;
 
 				span.glyphicon {
 					padding-top:60px;
 					padding-right: 10px ;
-					padding-left: 120px ;
+					padding-left: 100px ;
 					color:#FFED00 ;
 				}
 		}
@@ -97,18 +96,84 @@ $textcolor:#FFF;
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-
 	.jumbotron {
+		box-sizing: border-box;
 		top: 0px !important;
 		background-repeat: no-repeat;
-		height: 100vh;	
+		height: 95vh;	
 		border-radius: 0 !important;
 		line-height: 50px;
 		margin-bottom: 0;
-		background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%);
+		background: rgba(51,51,51,0.6);
 		z-index: -101;
 		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
+
+		
+		.container {
+			padding-top: 150px;
+			color:$textcolor;
+		}
+
+
+		.wrapper { 
+			background: rgba(51,51,51,0.6);
+			position: absolute;
+			left:0;
+			padding-left:30px;
+			padding-top:5px;
+			padding-bottom:5px;
+			padding-right:30px;
+
+
+			h1 {
+				font-size: 40px !important;
+				text-align:left !important; 
+				font-family: 'Raleway', sans-serif;
+				letter-spacing: 2px;
+				padding-left: 150px;
+				line-height: 50px;
+				text-transform: uppercase;
+
+
+				span.focus {
+					font-weight: bolder !important;
+				}
+			}
+		}
+
+
+
+		.btn {
+			border-radius: 50px;
+			margin-top: 20px;
+		}
+
+
+		.logosmg {
+			min-height: auto;
+			max-width: 110px;
+			top:30px;
+			left:30px;		
+			position: absolute;
+		}
+
+
+		p { 
+			font-weight: lighter;
+			font-size: 22px;
+			position: relative;
+			margin-top: 20vh;
+			left:0;
+
+				span.glyphicon {
+					padding-top:60px;
+					padding-right: 10px ;
+					padding-left: 120px ;
+					color:#FFED00 ;
+				}
+		}
 	}
+
 
 	#video-background { 
       	position: absolute;
@@ -119,61 +184,7 @@ $textcolor:#FFF;
         overflow: hidden;
         z-index: -100;
         min-width:100%;
-        min-height: 100%;
-	}
-
-
-	.jumbotron .container {
-		padding-top: 160px;
-		color:$textcolor;
-	}
-
-	.jumbotron a {
-		color:$textcolor;
-		background-color: $maincolor;
-		border:none;
-		opacity: 0.8;
-	}
-
-	.jumbotron a:hover {
-		opacity: 1;
-		background-color: $maincolor;
-
-	}
-
-	.jumbotron h1 {
-		font-size: 40px !important;
-		text-align:left !important; 
-		line-height: 60px;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight: 100;
-		letter-spacing: 0.5px;
-
-	}
-
-	.jumbotron .btn {
-		border-radius: 50px;
-		margin-top: 20px;
-	}
-
-	.jumbotron p a.btn {
-		font-size: 12px !important;
-		padding: 15px 35px;
-	}
-
-	.jumbotron h1 span.focus {
-		font-weight: bolder !important;
-	}
-
-	.jumbotron span.glyphicon {
-		padding-top:80px;
-	}
-
-	.jumbotron .logosmg {
-		height: auto;
-		width: 220px;
-		position: absolute;
-		top:150px;
+        max-height: 100%;
 	}
 	
 }
@@ -182,80 +193,84 @@ $textcolor:#FFF;
 @media (min-width: 768px) and (max-width: 991px) {
 
 	.jumbotron {
+		box-sizing: border-box;
 		top: 0px !important;
 		background-repeat: no-repeat;
-		height: 100vh;	
+		height: 95vh;	
 		border-radius: 0 !important;
 		line-height: 50px;
 		margin-bottom: 0;
-		background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%);
 		z-index: -101;
-		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
+		background: linear-gradient(-190deg, rgba(51,51,51,0.6) 0%, rgba(51,51,51,0.6) 80%), url("https://hd.unsplash.com/photo-1463320697897-897fc554409a"); 
+		background-size: auto 100%;
+		
+		.container {
+			padding-top: 250px;
+			color:$textcolor;
+		}
+
+
+		.wrapper { 
+			background: rgba(51,51,51,0.6);
+			position: absolute;
+			left:0;
+			padding-top:5px;
+			padding-bottom:5px;
+			padding-right:30px;
+
+
+			h1 {
+				font-size: 30px !important;
+				text-align:left !important; 
+				font-family: 'Raleway', sans-serif;
+				letter-spacing: 2px;
+				padding-left: 150px;
+				line-height: 50px;
+				text-transform: uppercase;
+
+
+				span.focus {
+					font-weight: bolder !important;
+				}
+			}
+		}
+
+
+
+		.btn {
+			border-radius: 50px;
+			margin-top: 20px;
+		}
+
+
+		.logosmg {
+			min-height: auto;
+			max-width: 110px;
+			top:30px;
+			left:30px;		
+			position: absolute;
+		}
+
+
+		p { 
+			font-weight: lighter;
+			font-size: 20px;
+			position: relative;
+			margin-top: 20vh;
+			left:0;
+
+				span.glyphicon {
+					padding-top:60px;
+					padding-right: 10px ;
+					padding-left: 50px ;
+					color:#FFED00 ;
+				}
+		}
 	}
+
 
 	#video-background { 
-      	position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        overflow: hidden;
-        z-index: -100;
-        min-width:100%;
-        min-height: 100%;
-	}
-
-	.jumbotron .container {
-		padding-top: 100px;
-		color:$textcolor;
-		text-align:center !important; 
-
-	}
-
-	.jumbotron a {
-		color:$textcolor;
-		background-color: $maincolor;
-		border:none;
-		opacity: 0.8;
-	}
-
-	.jumbotron a:hover {
-		opacity: 1;
-		background-color: $maincolor;
-
-	}
-
-	.jumbotron h1 {
-		font-size: 40px !important;
-		line-height: 60px;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight: 100;
-		letter-spacing: 0.5px;
-
-	}
-
-	.jumbotron .btn {
-		border-radius: 50px;
-		margin-top: 20px;
-	}
-
-	.jumbotron p a.btn {
-		font-size: 12px !important;
-		padding: 15px 35px;
-	}
-
-	.jumbotron h1 span.focus {
-		font-weight: bolder !important;
-	}
-
-	.jumbotron span.glyphicon {
-		padding-top:60px;
-	}
-
-	.jumbotron .logosmg {
-		height: auto;
-		width: 220px;
-
+		display: none;
 	}
 
 }
@@ -264,80 +279,79 @@ $textcolor:#FFF;
 @media (max-width: 767px) { 
 
 	.jumbotron {
+		box-sizing: border-box;
 		top: 0px !important;
 		background-repeat: no-repeat;
-		height: 100vh;	
+		height: 95vh;	
 		border-radius: 0 !important;
-		line-height: 50px;
 		margin-bottom: 0;
-		background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%);
 		z-index: -101;
-		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
+		background: linear-gradient(-190deg, rgba(51,51,51,0.6) 0%, rgba(51,51,51,0.6) 80%), url("https://hd.unsplash.com/photo-1463320697897-897fc554409a"); 
+		background-size: auto 100%;
+		
+		.container {
+			padding-top: 110px;
+			color:$textcolor;
+		}
+
+
+		.wrapper { 
+			background: rgba(51,51,51,0.6);
+			position: absolute;
+			left:0;
+			padding-left: 15px;
+
+
+
+			h1 {
+				font-size: 25px !important;
+				text-align:left !important; 
+				font-family: 'Raleway', sans-serif;
+				letter-spacing: 2px;
+				line-height: 30px;
+				text-transform: uppercase;
+
+
+				span.focus {
+					font-weight: bolder !important;
+				}
+			}
+		}
+
+
+
+		.btn {
+			border-radius: 50px;
+			margin-top: 20px;
+		}
+
+
+		.logosmg {
+			height: auto;
+			width: 120px;
+			bottom:120px;
+			position: relative;
+		}
+
+
+		p { 
+			font-weight: lighter;
+			font-size: 17px;
+			position: relative;
+			margin-top: 30vh;
+			left:0;
+
+				span.glyphicon {
+					padding-top:10px;
+					color:#FFED00 ;
+					padding-right: 5px;
+				}
+		}
 	}
+
 
 	#video-background { 
-      	position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        overflow: hidden;
-        z-index: -100;
-        min-width:100%;
-        min-height: 100%;
-	}
-
-	.jumbotron .container {
-		padding-top: 150px;
-		color:$textcolor;
-		text-align:center !important; 
-
-	}
-
-	.jumbotron a {
-		color:$textcolor;
-		background-color: $maincolor;
-		border:none;
-		opacity: 0.8;
-	}
-
-	.jumbotron a:hover {
-		opacity: 1;
-		background-color: $maincolor;
-
-	}
-
-	.jumbotron h1 {
-		font-size: 25px !important;
-		line-height: 40px;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight: 100;
-		letter-spacing: 0.5px;
-
-	}
-
-	.jumbotron .btn {
-		border-radius: 50px;
-		margin-top: 20px;
-	}
-
-	.jumbotron p a.btn {
-		font-size: 12px !important;
-		padding: 15px 35px;
-	}
-
-	.jumbotron h1 span.focus {
-		font-weight: bolder !important;
-	}
-
-	.jumbotron span.glyphicon {
-		padding-top:60px;
-	}
-
-	.jumbotron .logosmg {
-		height: auto;
-		width: 220px;
-
+		display:none;
 	}
 
 }

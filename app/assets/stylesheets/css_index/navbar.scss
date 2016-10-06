@@ -11,6 +11,8 @@ $secondarycolor:#FFED00 ;
 		background:transparent;
 		position:absolute;
 		top:20px;
+		left:0;
+		right:0;
 		border:none;
 		left:50px;
 
@@ -18,18 +20,22 @@ $secondarycolor:#FFED00 ;
 
 			ul.nav {
 				letter-spacing: 2px;
+				margin-left:0;
+				margin-right:0;
 				padding-left:200px;
-				padding-top: 3px;
+				padding-right:0;
+				display: block;
+				text-align: center;
 
 				li {
 
 					a {
-						color:$primarycolor !important;
+						color:$primarycolor;
 						opacity: 0.8;
 						font-size: 12px;
 
 						&:hover {
-							color: $primarycolor !important;
+							color: $primarycolor;
 							opacity: 1;
 						}
 					}
@@ -64,7 +70,9 @@ $secondarycolor:#FFED00 ;
 	nav.navbar .navbar-header a.navbar-brand img {
 		height: auto;
 		width: 110px;
+
 	}
+
 
 
 	/* Style si nom du site = texte */
@@ -84,122 +92,104 @@ $secondarycolor:#FFED00 ;
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-	
-	/* Style global de la navbar */
+	/* Lien des boutons de navigation du menu*/
 	nav.navbar.navbar-default {
 		margin-bottom: 0px !important;
 		background:transparent;
 		position:absolute;
 		top:20px;
+		left:0;
+		right:0;
 		border:none;
 		left:50px;
+
+		#navbar {
+
+			ul.nav {
+				letter-spacing: 2px;
+				margin-left:0;
+				margin-right:0;
+				padding-left:150px;
+				padding-right:0;
+				display: block;
+				text-align: center;
+
+				li {
+
+					a {
+						color:$primarycolor !important;
+						opacity: 0.8;
+						font-size: 12px;
+
+						&:hover {
+							color: $primarycolor !important;
+							opacity: 1;
+						}
+					}
+				}			
+			}
+		}	
 	}
-	
 
-	/* Lien des boutons de navigation du menu*/
-	nav.navbar #navbar ul.nav li a {
-		color:$primarycolor !important;
-		opacity: 0.8;
-		font-size: 12px;
+	.social {
+		display: none;
 	}
-
-	nav.navbar #navbar ul.nav li a:hover {
-		color: $primarycolor !important;
-		opacity: 1;
-	}
-
-	ul.nav {
-		letter-spacing: 2px;
-		padding-left:0px;
-		padding-top: 2px;
-	} 
-
-
-	/* Style si nom du site = texte */
-	/*nav.navbar .navbar-header a.navbar-brand {
-		color:$primarycolor;
-		opacity: 0.8;
-	}
-		
-	nav.navbar .navbar-header a.navbar-brand:hover {
-		color:$primarycolor;
-		opacity: 1;
-	}*/
-
 
 
 	/* Style du logo */
 	nav.navbar .navbar-header a.navbar-brand img {
 		display: none;
 	}
-
-
-	/* Style du bouton de Call to Action */
-	#navbar .navbar-form .btn {
-		color:$primarycolor;
-		border: 2px solid $primarycolor;
-		border-radius: 50px;
-		font-size: 11px !important;
-		padding: 8px 25px;
-		background: none !important;
-		opacity: 0.8;
-	}
-
-	#navbar .navbar-form .btn:hover {
-		opacity: 1;
-		color:#F9F9F9;
-	}
-
 }
-
-
-
 
 
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 
-	/* Style global de la navbar */
+	/* Lien des boutons de navigation du menu*/
 	nav.navbar.navbar-default {
-		margin-bottom: 0px !important;
+		bottom: 0px !important;
 		background:transparent;
 		position:absolute;
 		top:20px;
+		left:0;
+		right:0;
 		border:none;
-		left:100px;
+
+
+		#navbar {
+
+			ul.nav {
+				letter-spacing: 2px;
+				margin-left:0;
+				margin-right:0;
+				padding-left:60px;
+				padding-right:0;
+				display: block;
+				text-align: center;
+
+
+				li {
+
+					a {
+						color:$primarycolor !important;
+						opacity: 0.8;
+						font-size: 12px;
+
+						&:hover {
+							color: $primarycolor !important;
+							opacity: 1;
+						}
+					}
+				}			
+			}
+		}	
 	}
-	
 
-	/* Lien des boutons de navigation du menu*/
-	nav.navbar #navbar ul.nav li a {
-		color:$primarycolor !important;
-		opacity: 0.8;
-		font-size: 12px;
+	.social {
+		display: none;
 	}
-
-	nav.navbar #navbar ul.nav li a:hover {
-		color: $primarycolor !important;
-		opacity: 1;
-	}
-
-	ul.nav {
-		letter-spacing: 2px;
-		padding-top: 2px;
-	} 
-
-
-	/* Style si nom du site = texte */
-	/*nav.navbar .navbar-header a.navbar-brand {
-		color:$primarycolor;
-		opacity: 0.8;
-	}
-		
-	nav.navbar .navbar-header a.navbar-brand:hover {
-		color:$primarycolor;
-		opacity: 1;
-	}*/
-
 
 
 	/* Style du logo */
@@ -207,98 +197,169 @@ $secondarycolor:#FFED00 ;
 		display: none;
 	}
 
-
-	/* Style du bouton de Call to Action */
-	#navbar .navbar-form .btn {
-		display: none;
-	}
-
 }
-
-
-
-
 
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
-	/* Style global de la navbar */
 	nav.navbar.navbar-default {
-		background:transparent;
-		position:absolute;
-		border:none;
+		margin:0;
+		z-index: 1200;
+		position: relative;
+		right:0;
+		background-color:#FFF !important;
+		border-color:#FFF !important;
 
-	}
+		.navbar-toggle {
+	   		position: absolute;
+	   		border:none !important;
+	   		background: transparent !important;	 
+	   		display: block;
+	   		right:0;
+
+	   		.icon-bar {
+	  			transition: all 0.2s;
+	  			width: 22px;
+	  			display: block;
+	  			z-index: 2000;
+	  			border-color: #FFFFFF !important;
+	  		}
+
+	  		.top-bar {
+				transform: rotate(45deg);
+				transform-origin: 10% 10%;
+	  		}
+
+	  		.middle-bar {
+	  			opacity:0;
+	  		}
+
+	  		.bottom-bar {
+	  			transform: rotate(-45deg);
+				transform-origin: 10% 90%;
+	  		}	
+   		}
+
 	
+		.navbar-collapse {
+			background-color: #FFFFFF !important;
+			position: fixed;
+			margin:0 !important;
+			width: 100%;
+			text-align: center;
+			left:0;
+			box-shadow: 3px 11px 24px -11px rgba(0,0,0,0.3);
+		}
 
-	/* Lien des boutons de navigation du menu*/
-	nav.navbar #navbar ul.nav li a {
-		color:#979797 !important;
-		opacity: 0.8;
-		font-size: 12px;
+		.navbar-header {
+			width: 100%;
+			margin: 0;
 
+			a.navbar-brand img {
+				display: none;
+			}
+		}
+
+		.social {
+			display: none;
+		}
+
+
+		.navbar-toggle.collapsed {
+
+			.top-bar {
+			    transform: rotate(0);
+			}
+
+			.middle-bar {
+			    opacity: 1;
+			}
+
+			.bottom-bar {
+			    transform: rotate(0);		
+			}
+		}
 	}
-
-	nav.navbar #navbar ul.nav li a:hover {
-		color: #979797 !important;
-		opacity: 1;
-	}
-
-	ul.nav {
-		letter-spacing: 2px;
-		padding-top: 2px;
-	} 
-
-
-
-	/* Style du logo */
-	nav.navbar .navbar-header a.navbar-brand img {
-		display: none;
-	}
-
-
-	/* Style du bouton de Call to Action */
-	#navbar .navbar-form .btn {
-		display: none;
-	}
-
-
-
-	/* Style du bouton sur mobile */
-	.navbar-toggle {
-		background-color:transparent !important;
-		border:1px solid #797979 !important;
-		position: fixed;
-		right:10px;
-		top:10px;
-		z-index: 100;
-
-	}
-
-	.navbar-toggle.collapsed {
-		border:1px solid $primarycolor !important;
-	}
-
-	.navbar-toggle.collapsed span.icon-bar {
-		border:1px solid $primarycolor !important;
-	}
-
-
-	.navbar-collapse {
-		background-color: $primarycolor;
-		position: fixed;
-		width: 100%;
-		top:0;
-	}
-
-	.navbar-form {
-		display: none;
-	}
-
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
+	nav.navbar.navbar-default {
+		margin:0;
+		z-index: 1200;
+		position: relative;
+		right:0;
+		background-color:#FFF !important;
+		border-color:#FFF !important;
+
+		.navbar-toggle {
+	   		position: absolute;
+	   		border:none !important;
+	   		background: transparent !important;	 
+	   		display: block;
+	   		right:0;
+
+	   		.icon-bar {
+	  			transition: all 0.2s;
+	  			width: 22px;
+	  			display: block;
+	  			z-index: 2000;
+	  			border-color: #FFFFFF !important;
+	  		}
+
+	  		.top-bar {
+				transform: rotate(45deg);
+				transform-origin: 10% 10%;
+	  		}
+
+	  		.middle-bar {
+	  			opacity:0;
+	  		}
+
+	  		.bottom-bar {
+	  			transform: rotate(-45deg);
+				transform-origin: 10% 90%;
+	  		}	
+   		}
+
+	
+		.navbar-collapse {
+			background-color: #FFFFFF !important;
+			position: fixed;
+			margin:0 !important;
+			width: 100%;
+			text-align: center;
+			left:0;
+			box-shadow: 3px 11px 24px -11px rgba(0,0,0,0.3);
+		}
+
+		.navbar-header {
+			width: 100%;
+			margin: 0;
+			a.navbar-brand img {
+				display: none;
+			}			
+		}
+
+		.social {
+			display: none;
+		}
+
+		.navbar-toggle.collapsed {
+
+			.top-bar {
+			    transform: rotate(0);
+			}
+
+			.middle-bar {
+			    opacity: 1;
+			}
+
+			.bottom-bar {
+			    transform: rotate(0);		
+			}
+		}
+	}
 }

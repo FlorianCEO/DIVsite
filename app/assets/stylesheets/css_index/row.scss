@@ -40,51 +40,31 @@ $secondarycolor:#979797;
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-	/* Style du bouton de Call to Action */
-	.rowhome .row .col-md-4 p a.btn {
-		color:$primarycolor;
-		border:1px solid $primarycolor;
-		font-size: 12px;
+	.rowhome {
+		.row {
+			text-align: center;
+			padding-bottom: 50px;
+			padding-top: 50px;
+			background-color: #FFFFFF;
+
+			.col-md-4 {
+
+				h2 {
+					line-height: 60px !important;
+					color:$secondarycolor;
+					font-size: 22px;
+					font-weight: lighter;
+					letter-spacing: 2px;
+				}
+
+				.logocustomers {
+					display: inline-block;
+					float: none;
+					position: relative;
+					width: 80px;
+				}
+			}
 		}
-
-	.rowhome .row .col-md-4 p a.btn:hover {
-		background-color: $primarycolor;
-		color:white;
-	}
-
-	/* Style du titre et sous titre */
-	.rowhome .row .col-md-4 p {
-		line-height: 30px !important;
-	}
-
-	.rowhome .row .col-md-4 h2 {
-		line-height: 60px !important;
-		color:$secondarycolor;
-		font-size: 22px;
-		font-weight: lighter;
-		letter-spacing: 2px;
-	}
-
-
-	.rowhome .row {
-		text-align: center;
-		padding-bottom: 150px;
-		padding-top: 50px;
-	}
-
-	/* Style pour trait/espace entre bloc */
-	.rowhome .row .col-md-4:first-child {
-		border-right:1px solid $secondarycolor !important;
-	}
-
-	.rowhome .row .col-md-4:last-child {
-		border-left:1px solid $secondarycolor !important;
-	}
-
-	.rowhome .row .col-md-4 .logocustomers {
-		display: inline-block;
-		float: none;
-		position: relative;
 	}
 
 }
@@ -97,101 +77,63 @@ $secondarycolor:#979797;
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 
-	/* Style du bouton de Call to Action */
-	.rowhome .row .col-md-4 p a.btn {
-		color:$primarycolor;
-		border:1px solid $primarycolor;
-		font-size: 12px;
+	.rowhome {
+		.row {
+			text-align: center;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			background-color: #FFFFFF;
+
+			.col-md-4 {
+
+				h2 {
+					line-height: 60px !important;
+					color:$secondarycolor;
+					font-size: 22px;
+					font-weight: lighter;
+					letter-spacing: 2px;
+				}
+
+				.logocustomers {
+					display: inline-block;
+					float: none;
+					position: relative;
+					width: 80px;
+				}
+			}
 		}
-
-	.rowhome .row .col-md-4 p a.btn:hover {
-		background-color: $primarycolor;
-		color:white;
 	}
-
-	/* Style du titre et sous titre */
-	.rowhome .row .col-md-4 p {
-		line-height: 30px !important;
-		padding-left:150px;
-		padding-right:150px;
-	}
-
-	.rowhome .row .col-md-4 h2 {
-		line-height: 60px !important;
-		color:$secondarycolor;
-		font-size: 22px;
-		font-weight: lighter;
-		letter-spacing: 2px;
-	}
-
-
-	.rowhome .row {
-		text-align: center;
-		padding-bottom: 50px;
-	}
-
-	.rowhome .row .col-md-4 {
-		padding-top: 20px;
-	}
-
-	.rowhome .row .col-md-4 .logocustomers {
-		display: inline-block;
-		float: none;
-		position: relative;
-	}
-
-
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
+	.rowhome {
+		.row {
+			text-align: center;
+			padding-bottom: 50px;
+			padding-top: 50px;
+			background-color: #FFFFFF;
 
-	/* Style du bouton de Call to Action */
-	.rowhome .row .col-md-4 p a.btn {
-		color:$primarycolor;
-		border:1px solid $primarycolor;
-		font-size: 12px;
+			.col-md-4 {
+
+				h2 {
+					line-height: 60px !important;
+					color:$secondarycolor;
+					font-size: 22px;
+					font-weight: lighter;
+					letter-spacing: 2px;
+				}
+
+				.logocustomers {
+					display: inline-block;
+					float: none;
+					position: relative;
+					width: 80px;
+				}
+			}
 		}
-
-	.rowhome .row .col-md-4 p a.btn:hover {
-		background-color: $primarycolor;
-		color:white;
 	}
-
-	/* Style du titre et sous titre */
-	.rowhome .row .col-md-4 p {
-		line-height: 30px !important;
-		padding-left:50px;
-		padding-right:50px;
-	}
-
-	.rowhome .row .col-md-4 h2 {
-		line-height: 60px !important;
-		color:$secondarycolor;
-		font-size: 22px;
-		font-weight: lighter;
-		letter-spacing: 2px;
-	}
-
-
-	.rowhome .row {
-		text-align: center;
-		padding-bottom: 50px;
-	}
-
-	.rowhome .row .col-md-4 {
-		padding-top: 20px;
-	}
-
-
-	.rowhome .row .col-md-4 .logocustomers {
-		display: inline-block;
-		float: none;
-		position: relative;
-	}
-
-
 }
 
 /* Portrait phones and smaller */
