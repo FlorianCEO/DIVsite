@@ -1,8 +1,276 @@
+$maincolor:#FFED00;
 
-.show > .container > img {
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	.show {
+		text-align: center;
+		hr.top_title {
+	    border: 0;
+	    height: 1px;
+	    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+
+		p {
+			line-height: 30px;
+		}
+
+		h3 {
+			line-height:40px;
+		}
+
+		.imgshowprojet {
+			width: 600px;
+			height: auto;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top:30px;
+		}
+
+		p.align-center {
+			text-align: center;
+			a {
+				color:#979797;
+				background-color: $maincolor;
+				border:none;
+				font-size: 14px;
+
+				&:hover {
+					background-color: $maincolor;
+					color:#000;
+				}
+			}
+			
+			.btn {
+				border-radius: 50px;
+				margin-top: 5px;
+				font-size: 12px !important;
+				padding: 15px 35px;
+			}
+		}
+	}
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.show {
+		text-align: center;
+		hr.top_title {
+	    border: 0;
+	    height: 1px;
+	    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+
+		p {
+			line-height: 30px;
+		}
+
+		h3 {
+			line-height:40px;
+		}
+
+		.imgshowprojet {
+			width: 600px;
+			height: auto;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top:30px;
+		}
+
+		p.align-center {
+			text-align: center;
+			a {
+				color:#979797;
+				background-color: $maincolor;
+				border:none;
+				font-size: 14px;
+
+				&:hover {
+					background-color: $maincolor;
+					color:#000;
+				}
+			}
+			
+			.btn {
+				border-radius: 50px;
+				margin-top: 5px;
+				font-size: 12px !important;
+				padding: 15px 35px;
+			}
+		}
+	}
 }
 
 
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.show {
+		text-align: center;
+		hr.top_title {
+	    border: 0;
+	    height: 1px;
+	    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+
+		p {
+			line-height: 30px;
+		}
+
+		h3 {
+			line-height:40px;
+		}
+
+		.imgshowprojet {
+			width: 500px;
+			height: auto;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top:30px;
+		}
+
+		p.align-center {
+			text-align: center;
+			a {
+				color:#979797;
+				background-color: $maincolor;
+				border:none;
+				font-size: 14px;
+
+				&:hover {
+					background-color: $maincolor;
+					color:#000;
+				}
+			}
+			
+			.btn {
+				border-radius: 50px;
+				margin-top: 5px;
+				font-size: 12px !important;
+				padding: 15px 35px;
+			}
+		}
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.show {
+		text-align: center;
+		hr.top_title {
+	    border: 0;
+	    height: 1px;
+	    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+
+		p {
+			line-height: 30px;
+		}
+
+		h3 {
+			line-height:40px;
+		}
+
+		.imgshowprojet {
+			width: 340px;
+			height: auto;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top:30px;
+		}
+
+		p.align-center {
+			text-align: center;
+			a {
+				color:#979797;
+				background-color: $maincolor;
+				border:none;
+				font-size: 14px;
+
+				&:hover {
+					background-color: $maincolor;
+					color:#000;
+				}
+			}
+			
+			.btn {
+				border-radius: 50px;
+				margin-top: 5px;
+				font-size: 12px !important;
+				padding: 15px 35px;
+			}
+		}
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.show {
+		text-align: center;
+		hr.top_title {
+	    border: 0;
+	    height: 1px;
+	    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+
+		p {
+			line-height: 30px;
+		}
+
+		h3 {
+			line-height:40px;
+		}
+
+		.imgshowprojet {
+			width: 280px;
+			height: auto;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top:30px;
+		}
+
+		p.align-center {
+			text-align: center;
+			a {
+				color:#979797;
+				background-color: $maincolor;
+				border:none;
+				font-size: 14px;
+
+				&:hover {
+					background-color: $maincolor;
+					color:#000;
+				}
+			}
+			
+			.btn {
+				border-radius: 50px;
+				margin-top: 5px;
+				font-size: 12px !important;
+				padding: 15px 35px;
+			}
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

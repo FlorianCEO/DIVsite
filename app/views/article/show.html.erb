@@ -1,7 +1,7 @@
 <div class="show">
 	<div class="block">
 	    <div class="container">
-	    	<%= image_tag("logo2.png", :class => "logosmg")%>  
+	    	<%= image_tag("logo3.png", :class => "logosmg")%>  
 	    	<br>
 	        <h1>Article</h1>
 	        <p>Pour enrichir tous les jours vos connaissances</p>
@@ -10,13 +10,14 @@
 
 	<br>
 	<div class="container">
-		<h1 style="color:#FFED00"><%= @article.title %></h1>
-		<h2> <%= @article.soustitre %> </h2>
+		<h2 style="color:#FFED00"><%= @article.title %></h2>
+		<h3> <%= @article.soustitre %> </h3>
 		<p> écrit par <span style="font-weight:600;"><%= @article.user.name %></span> le <i><%= @article.created_at %></i></p>
 		<br>
 		<p><%= simple_format(@article.description).html_safe %></p>
-		
 		<br>
-		<img style="padding-top:200px;" src="<%= @article.image.url(:medium) %>" alt="<% @article.title %>">
+		<img style="padding-top:50px;width:400px;" src="<%= @article.image.url(:medium) %>" alt="<% @article.title %>">
+		<br>
+		<br>	
 	</div>
 </div>

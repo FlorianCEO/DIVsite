@@ -1,7 +1,7 @@
 <div class="show">
 	<div class="block">
 	    <div class="container">
-        <%= image_tag("logo2.png", :class => "logosmg")%>       
+        <%= image_tag("logo3.png", :class => "logosmg")%>       
 	    	<br>
 	        <h1>Projets</h1>
 	        <p>Fait avec amour à Paris</p>
@@ -11,10 +11,11 @@
 	<br>
 	<div class="container">
 		<h1><%= @projet.title %></h1>
+    <hr class="top_title">
 		<br>
 		<p><%= simple_format(@projet.description).html_safe %></p>
 		<br>
-		<img src="<%= @projet.image.url(:medium) %>" alt="<% @projet.title %>">
+		<!-- <img src="<%= @projet.image.url(:medium) %>" alt="<% @projet.title %>">-->
 	</div>
 </div>
 
@@ -28,10 +29,10 @@
     </div>
 
       <div class="bodyprojet">
-          <% @Projets.limit(3).in_groups_of(3, false).each do |group| %>
+          <% @Projets.limit(6).in_groups_of(6, false).each do |group| %>
               <div class="row">
                 <% group.each do |projet| %>
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                       <a href="<%= projet_path(projet.slug) %>"><div class="thumbnail">
                         <img src="<%= projet.image.url(:medium) %>" alt="<% projet.title %>">
                       </div></a>

@@ -7,6 +7,21 @@ $textcolor:#FFF;
 @media (min-width: 1200px) {
 
 	.jumbotron {
+		position: relative;
+		top:20%;
+		left:0;
+		right: 0;
+		bottom: 0;
+		background-repeat: no-repeat;
+		height: 95vh;	
+		border-radius: 0 !important;
+		line-height: 50px;
+		margin-bottom: 0;
+		background: rgba(51,51,51,0.6);
+		z-index: -1;
+		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
+	
+	/*.jumbotron {
 		box-sizing: border-box;
 		top: 0px !important;
 		background-repeat: no-repeat;
@@ -16,8 +31,7 @@ $textcolor:#FFF;
 		margin-bottom: 0;
 		background: rgba(51,51,51,0.6);
 		z-index: -101;
-		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
-
+		 background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
 		
 		.container {
 			padding-top: 180px;
@@ -29,7 +43,7 @@ $textcolor:#FFF;
 			background: rgba(51,51,51,0.6);
 			position: absolute;
 			left:0;
-			padding-top:5px 30px 5px 30px;
+			padding-top:10px 30px 10px 30px;
 
 
 
@@ -39,7 +53,7 @@ $textcolor:#FFF;
 				font-family: 'Raleway', sans-serif;
 				letter-spacing: 2px;
 				padding-left: 150px;
-				line-height: 50px;
+				line-height: 60px;
 				text-transform: uppercase;
 
 
@@ -61,21 +75,25 @@ $textcolor:#FFF;
 			display: none;
 		}
 
-
-		p { 
-			font-weight: lighter;
-			font-size: 25px;
-			position: relative;
-			margin-top: 20vh;
+		.wrapper_text {
+			position: absolute;
 			left:0;
+			padding-top:10px 30px 10px 30px;
+			p { 
+				font-weight: lighter;
+				font-size: 25px;
+				margin-top: 20vh;
+				padding-left: 50px;
 
-				span.glyphicon {
-					padding-top:60px;
-					padding-right: 10px ;
-					padding-left: 100px ;
-					color:#FFED00 ;
-				}
+					span.glyphicon {
+						padding-top:60px;
+						padding-right: 10px ;
+						padding-left: 100px ;
+						color:#FFED00 ;
+					}
+			}
 		}
+
 	}
 
 
@@ -97,15 +115,18 @@ $textcolor:#FFF;
 @media (min-width: 992px) and (max-width: 1199px) {
 
 	.jumbotron {
-		box-sizing: border-box;
-		top: 0px !important;
+		position: relative;
+		top:20%;
+		left:0;
+		right: 0;
+		bottom: 0;
 		background-repeat: no-repeat;
 		height: 95vh;	
 		border-radius: 0 !important;
 		line-height: 50px;
 		margin-bottom: 0;
 		background: rgba(51,51,51,0.6);
-		z-index: -101;
+		z-index: -1;
 		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
 
 		
@@ -151,26 +172,30 @@ $textcolor:#FFF;
 
 		.logosmg {
 			min-height: auto;
-			max-width: 110px;
+			max-width: 200px;
 			top:30px;
 			left:30px;		
 			position: absolute;
 		}
 
 
-		p { 
-			font-weight: lighter;
-			font-size: 22px;
-			position: relative;
-			margin-top: 20vh;
+		.wrapper_text {
+			position: absolute;
 			left:0;
+			padding-top:10px 30px 10px 30px;
+			p { 
+				font-weight: lighter;
+				font-size: 22px;
+				margin-top: 20vh;
+				padding-left: 50px;
 
-				span.glyphicon {
-					padding-top:60px;
-					padding-right: 10px ;
-					padding-left: 120px ;
-					color:#FFED00 ;
-				}
+					span.glyphicon {
+						padding-top:60px;
+						padding-right: 10px ;
+						padding-left: 120px ;
+						color:#FFED00 ;
+					}
+			}
 		}
 	}
 
@@ -193,19 +218,23 @@ $textcolor:#FFF;
 @media (min-width: 768px) and (max-width: 991px) {
 
 	.jumbotron {
-		box-sizing: border-box;
-		top: 0px !important;
+		position: relative;
+		top:20%;
+		left:0;
+		right: 0;
+		bottom: 0;
 		background-repeat: no-repeat;
 		height: 95vh;	
 		border-radius: 0 !important;
-		line-height: 50px;
 		margin-bottom: 0;
-		z-index: -101;
+		background: rgba(51,51,51,0.6);
+		z-index: -1;
+		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
 		background: linear-gradient(-190deg, rgba(51,51,51,0.6) 0%, rgba(51,51,51,0.6) 80%), url("https://hd.unsplash.com/photo-1463320697897-897fc554409a"); 
 		background-size: auto 100%;
 		
 		.container {
-			padding-top: 250px;
+			padding-top: 180px;
 			color:$textcolor;
 		}
 
@@ -224,7 +253,7 @@ $textcolor:#FFF;
 				text-align:left !important; 
 				font-family: 'Raleway', sans-serif;
 				letter-spacing: 2px;
-				padding-left: 150px;
+				padding-left: 80px;
 				line-height: 50px;
 				text-transform: uppercase;
 
@@ -245,7 +274,7 @@ $textcolor:#FFF;
 
 		.logosmg {
 			min-height: auto;
-			max-width: 110px;
+			max-width: 200px;
 			top:30px;
 			left:30px;		
 			position: absolute;
@@ -266,6 +295,26 @@ $textcolor:#FFF;
 					color:#FFED00 ;
 				}
 		}
+
+
+		.wrapper_text {
+			position: absolute;
+			left:0;
+			padding-top:10px 30px 10px 30px;
+			p { 
+				font-weight: lighter;
+				font-size: 20px;
+				margin-top: 20vh;
+				padding-left: 50px;
+
+					span.glyphicon {
+						padding-top:60px;
+						padding-right: 10px ;
+						padding-left: 50px ;
+						color:#FFED00 ;
+					}
+			}
+		}
 	}
 
 
@@ -279,13 +328,18 @@ $textcolor:#FFF;
 @media (max-width: 767px) { 
 
 	.jumbotron {
-		box-sizing: border-box;
-		top: 0px !important;
+		position: relative;
+		top:20%;
+		left:0;
+		right: 0;
+		bottom: 0;
 		background-repeat: no-repeat;
-		height: 95vh;	
+		height: 95vh;
 		border-radius: 0 !important;
 		margin-bottom: 0;
-		z-index: -101;
+		background: rgba(51,51,51,0.6);
+		z-index: -1;
+		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
 		background: linear-gradient(-190deg, rgba(51,51,51,0.6) 0%, rgba(51,51,51,0.6) 80%), url("https://hd.unsplash.com/photo-1463320697897-897fc554409a"); 
 		background-size: auto 100%;
 		
@@ -300,11 +354,105 @@ $textcolor:#FFF;
 			position: absolute;
 			left:0;
 			padding-left: 15px;
+			top:40%;
 
 
 
 			h1 {
 				font-size: 25px !important;
+				text-align:left !important; 
+				font-family: 'Raleway', sans-serif;
+				letter-spacing: 2px;
+				line-height: 50px;
+				text-transform: uppercase;
+
+
+				span.focus {
+					font-weight: bolder !important;
+				}
+			}
+		}
+
+
+
+		.btn {
+			border-radius: 50px;
+			margin-top: 20px;
+		}
+
+
+		.logosmg {
+			height: auto;
+			max-width: 200px;
+			bottom:120px;
+			position: relative;
+		}
+
+
+
+
+		.wrapper_text {
+			position: absolute;
+			left:0;
+			padding-top:0 0 0 15px;
+			p { 
+				font-weight: lighter;
+				font-size: 17px;
+				margin-top: 30vh;
+
+
+					span.glyphicon {
+						padding-top:10px;
+						color:#FFED00 ;
+						margin-left: 10px;
+						margin-right:5px;
+					}
+			}
+		}
+	}
+
+
+	#video-background { 
+		display:none;
+	}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+	.jumbotron {
+		position: relative;
+		top:20%;
+		left:0;
+		right: 0;
+		bottom: 0;
+		background-repeat: no-repeat;
+		height:85vh;
+		border-radius: 0 !important;
+		margin-bottom: 0;
+		background: rgba(51,51,51,0.6);
+		z-index: -1;
+		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
+		background: linear-gradient(-190deg, rgba(51,51,51,0.6) 0%, rgba(51,51,51,0.6) 80%), url("https://hd.unsplash.com/photo-1463320697897-897fc554409a"); 
+		background-size: auto 100%;
+		
+		.container {
+			padding-top: 180px;
+			color:$textcolor;
+		}
+
+
+		.wrapper { 
+			background: rgba(51,51,51,0.6);
+			position: absolute;
+			left:0;
+			padding-left: 15px;
+
+
+
+			h1 {
+				font-size: 22px !important;
 				text-align:left !important; 
 				font-family: 'Raleway', sans-serif;
 				letter-spacing: 2px;
@@ -328,37 +476,51 @@ $textcolor:#FFF;
 
 		.logosmg {
 			height: auto;
-			width: 120px;
-			bottom:120px;
-			position: relative;
+			max-width: 150px;
+			top:15px;
+			position: absolute;
 		}
 
 
-		p { 
-			font-weight: lighter;
-			font-size: 17px;
-			position: relative;
-			margin-top: 30vh;
-			left:0;
 
-				span.glyphicon {
-					padding-top:10px;
-					color:#FFED00 ;
-					padding-right: 5px;
-				}
+		.wrapper_text {
+			position: absolute;
+			padding:0 0 0 15px;
+			left:0;
+			p { 
+				font-weight: lighter;
+				font-size: 17px;
+				margin-top: 30vh;
+				text-align: left;
+
+					span.glyphicon {
+						padding-top:10px;
+						padding-right: 5px ;
+						color:#FFED00 ;
+					}
+			}
 		}
 	}
 
 
 	#video-background { 
 		display:none;
-	}
-
+	}	
 }
 
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
 
-	
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
