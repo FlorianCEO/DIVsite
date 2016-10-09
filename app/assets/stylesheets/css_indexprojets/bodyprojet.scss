@@ -10,9 +10,10 @@ $maincolor:#FFED00;
 		max-width: 100%;
 
 		.row {
-			max-height: 200px;
+
 			.col-lg-4.col-md-4.col-sm-6.col-xs-12 {
 				padding:0px;
+				max-height: 400px;
 			}
 		}
 
