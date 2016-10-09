@@ -220,7 +220,7 @@ $maincolor:#FFED00;
 			padding:0 !important;
 			position: relative;
 			background: #000;
-			margin: 5px;
+			margin: 0px;
 
 			&:hover {
 				img {
@@ -235,7 +235,7 @@ $maincolor:#FFED00;
 
 			img {
 				max-height: 100%;
-	    		max-width: 100%;
+	    		width: 100%;
 	    		-webkit-transition: .3s ease-in-out;
 				transition: .3s ease-in-out;
 			}
