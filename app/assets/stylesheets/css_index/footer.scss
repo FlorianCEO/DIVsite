@@ -261,16 +261,19 @@ $secondarycolor:#FFED00 ;
 
 
 		.container {
+			margin:0;
 			.row {
 				position: absolute;
 				z-index: 1;
 				padding-top: 20px;
 				width: 90%;
+				margin:0;
 
 				.col-xs-6.col-sm-3 { 
 					display: block;
 					float: left;
 					margin-bottom: 40px;
+					margin:0;
 					
 					.logofooter {
 						width: 160px;
@@ -286,7 +289,7 @@ $secondarycolor:#FFED00 ;
 
 					ul.foot {
 						line-height: 30px;
-						margin-left: 0 !important;
+						margin: 0 !important;
 
 						li {
 						list-style: none !important;
@@ -341,20 +344,22 @@ $secondarycolor:#FFED00 ;
 		color:#292929;
 		text-align: left !important;
 		position: relative;
-
+		margin:0;
 
 
 		.container {
+			margin:0;
 			.row {
 				position: absolute;
 				z-index: 1;
 				padding-top: 20px;
 				width: 90%;
+				margin:0;
 
 				.col-xs-6.col-sm-3 { 
 					display: block;
 					float: left;
-					margin-bottom: 40px;
+					margin: 0px 0px 40px 0px;
 
 					.logofooter {
 						width: 150px;
@@ -370,7 +375,7 @@ $secondarycolor:#FFED00 ;
 
 					ul.foot {
 						line-height: 30px;
-						margin-left: 0 !important;
+						margin: 0 !important;
 
 						li {
 						list-style: none !important;

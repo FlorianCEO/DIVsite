@@ -161,8 +161,7 @@
 		background-size: cover !important;
 		color: white;
 		border-radius: 4px;
-		margin-top:5px;
-		margin-bottom:5px;
+		margin: 5px 0px 5px 0px;
 	}
 
 
@@ -189,12 +188,43 @@
 	.card a {
 		color:#F2F2F2;
 	}
-
-
-
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+
+		.card {
+		position: relative;
+		height: 200px;
+		background-size: cover !important;
+		color: white;
+		border-radius: 4px;
+		margin: 5px 0px 5px 0px;
+	}
+
+
+	.card-user {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		border: 2px solid white;
+	}
+
+	.card-category {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	.card-description {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		text-align:left;
+	}
+
+	.card a {
+		color:#F2F2F2;
+	}
 
 }

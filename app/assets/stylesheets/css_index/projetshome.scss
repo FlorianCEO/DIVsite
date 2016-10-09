@@ -417,6 +417,7 @@ $maincolor:#FFED00;
 		padding-top:20px;
 		padding-bottom: 20px;
 		line-height: 50px;
+		margin:0;
 
 		h1 {
 			font-size: 30px;
@@ -437,13 +438,22 @@ $maincolor:#FFED00;
 
 	.projetshome {
 	  	background-color: #FFFFFF; 	
+	  	margin:0;
+	  	padding:0;
+	  	position: relative;
+	  	right: 0;
+	  	left:0;
+	  	margin-right: 0;
+	  	margin-left: 0;
 
 	  	.container  {
 		 	line-height: 30px;
+		 	margin:0;
 
 		 	.col-md-6.pull-left {
 				padding-top: 20px;
 				padding-bottom: 40px;
+				margin:0 !important;
 			}
 
 			.logoauthor {
@@ -522,6 +532,7 @@ $maincolor:#FFED00;
 		text-align: center;
 		padding-top:20px;
 		padding-bottom: 20px;
+		margin:0;
 
 		h1 {
 			font-size: 25px;

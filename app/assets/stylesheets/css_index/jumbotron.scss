@@ -336,7 +336,7 @@ $textcolor:#FFF;
 		background-repeat: no-repeat;
 		height: 95vh;
 		border-radius: 0 !important;
-		margin-bottom: 0;
+		margin: 0;
 		background: rgba(51,51,51,0.6);
 		z-index: -1;
 		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
@@ -346,6 +346,7 @@ $textcolor:#FFF;
 		.container {
 			padding-top: 110px;
 			color:$textcolor;
+			margin:0;
 		}
 
 
@@ -430,7 +431,7 @@ $textcolor:#FFF;
 		background-repeat: no-repeat;
 		height:85vh;
 		border-radius: 0 !important;
-		margin-bottom: 0;
+		margin: 0;
 		background: rgba(51,51,51,0.6);
 		z-index: -1;
 		/* background: linear-gradient(-190deg, rgba(12,31,63,0.82) 0%, rgba(40,178,255,0.6) 80%), url("http://unsplash.it/1280/700/?image=912"); */
@@ -440,6 +441,7 @@ $textcolor:#FFF;
 		.container {
 			padding-top: 180px;
 			color:$textcolor;
+			margin: 0;
 		}
 
 
@@ -488,7 +490,7 @@ $textcolor:#FFF;
 			padding:0 0 0 15px;
 			left:0;
 			p { 
-				font-weight: lighter;
+				font-weight: 200;
 				font-size: 17px;
 				margin-top: 30vh;
 				text-align: left;

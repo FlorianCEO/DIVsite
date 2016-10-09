@@ -247,9 +247,9 @@ $textcolor:#FFF;
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
-		.block {
-		height: 49vh;	
-		width: 100%;
+	.block {
+		max-height: 49vh;	
+		max-width: 100%;
 		left:0 auto;
 		right:0 auto;
 		line-height: 30px;
