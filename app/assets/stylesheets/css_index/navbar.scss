@@ -10,14 +10,15 @@ $secondarycolor:#FFED00 ;
 		margin-bottom: 0px !important;
 		background:transparent;
 		position:absolute;
-		top:20px;
+		top:35px;
 		left:0;
 		right:0;
 		border:none;
 		left:0px;
 
-		#navbar {
 
+		#navbar {
+		
 			ul.nav {
 				letter-spacing: 2px;
 				margin-left:0;
@@ -67,10 +68,17 @@ $secondarycolor:#FFED00 ;
 
 
 	/* Style du logo */
-	nav.navbar .navbar-header a.navbar-brand img {
-		height: auto;
-		width: 200px;
-
+	nav.navbar {
+		.navbar-header { 
+			a.navbar-brand {
+				padding:0;
+				margin:0;
+				img {
+				height: auto;
+				width: 200px;
+				}
+			}
+		} 
 	}
 
 
