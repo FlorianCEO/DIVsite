@@ -5,20 +5,16 @@ $secondarycolor:#FFED00 ;
 
 	.footer {
 		height:40vh;
-		margin-top: 0px;
 		background-color: #FFFFFF;
 		color:#292929;
 		text-align: left !important;
-		position: relative;
-
-
 
 		.container {
+			max-width: 100%;
 			.row {
-				position: absolute;
 				z-index: 1;
 				padding-top: 20px;
-				width: 90%;
+				width: 100%;
 
 				.col-xs-6.col-sm-3 { 
 						
