@@ -293,72 +293,76 @@ $secondarycolor:#FFED00 ;
 		right:0;
 		background-color:#FFF !important;
 		border-color:#FFF !important;
+		width: 100%;
 
-		.navbar-toggle {
-	   		position: absolute;
-	   		border:none !important;
-	   		background: transparent !important;	 
-	   		display: block;
-	   		right:0;
+		.container {
+			max-width: 100%;
+				.navbar-toggle {
+		   		position: absolute;
+		   		border:none !important;
+		   		background: transparent !important;	 
+		   		display: block;
+		   		right:0;
 
-	   		.icon-bar {
-	  			transition: all 0.2s;
-	  			width: 22px;
-	  			display: block;
-	  			z-index: 2000;
-	  			border-color: #FFFFFF !important;
-	  		}
+		   		.icon-bar {
+		  			transition: all 0.2s;
+		  			width: 22px;
+		  			display: block;
+		  			z-index: 2000;
+		  			border-color: #FFFFFF !important;
+		  		}
 
-	  		.top-bar {
-				transform: rotate(45deg);
-				transform-origin: 10% 10%;
-	  		}
+		  		.top-bar {
+					transform: rotate(45deg);
+					transform-origin: 10% 10%;
+		  		}
 
-	  		.middle-bar {
-	  			opacity:0;
-	  		}
+		  		.middle-bar {
+		  			opacity:0;
+		  		}
 
-	  		.bottom-bar {
-	  			transform: rotate(-45deg);
-				transform-origin: 10% 90%;
-	  		}	
-   		}
+		  		.bottom-bar {
+		  			transform: rotate(-45deg);
+					transform-origin: 10% 90%;
+		  		}	
+	   		}
 
-	
-		.navbar-collapse {
-			background-color: #FFFFFF !important;
-			position: fixed;
-			margin:0 !important;
-			width: 100%;
-			text-align: center;
-			left:0;
-			box-shadow: 3px 11px 24px -11px rgba(0,0,0,0.3);
-		}
+		
+			.navbar-collapse {
+				background-color: #FFFFFF !important;
+				position: fixed;
+				margin:0 !important;
+				width: 100%;
+				text-align: center;
+				left:0;
+				box-shadow: 3px 11px 24px -11px rgba(0,0,0,0.3);
+			}
 
-		.navbar-header {
-			width: 100%;
-			margin: 0;
-			a.navbar-brand img {
+			.navbar-header {
+				width: 100%;
+				margin: 0;
+				a.navbar-brand img {
+					display: none;
+				}			
+			}
+
+			.social {
 				display: none;
-			}			
-		}
-
-		.social {
-			display: none;
-		}
-
-		.navbar-toggle.collapsed {
-
-			.top-bar {
-			    transform: rotate(0);
 			}
 
-			.middle-bar {
-			    opacity: 1;
-			}
+			.navbar-toggle.collapsed {
 
-			.bottom-bar {
-			    transform: rotate(0);		
+				.top-bar {
+				    transform: rotate(0);
+				}
+
+				.middle-bar {
+				    opacity: 1;
+				}
+
+				.bottom-bar {
+				    transform: rotate(0);		
+				}
 			}
 		}
 	}
