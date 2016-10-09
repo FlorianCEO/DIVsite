@@ -38,16 +38,73 @@
  */
 
 
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
 
-
-html, body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-	font-weight: 200;
-	margin:8px;
-	background-color: #FFF;
-	z-index:10;
-	position: relative;
+	html, body {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+		font-weight: 200;
+		margin:8px;
+		background-color: #FFF;
+		z-index:10;
+		position: relative;
+	}
 }
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	html, body {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+		font-weight: 200;
+		margin:8px;
+		background-color: #FFF;
+		z-index:10;
+		position: relative;
+	}	
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	html, body {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+		font-weight: 200;
+		margin:8px;
+		background-color: #FFF;
+		z-index:10;
+		position: relative;
+	}
+
+}
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) { 
+	html, body {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+		font-weight: 200;
+		background-color: #FFF;
+		z-index:10;
+		position: relative;
+	}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+	html, body {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+		font-weight: 200;
+		background-color: #FFF;
+		z-index:10;
+		position: relative;
+	}
+}
+
+
 
 
 
