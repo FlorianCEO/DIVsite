@@ -91,22 +91,30 @@ $maincolor:#FFED00;
 	}
 
 
+	.pretainer {
+		width: 100%;
+		background: #FFFFFF;
+		
+			.prerow {
+			text-align: center;
+			padding-top:50px;
+			padding-bottom: 30px;
+			line-height: 50px;
+			display: block;
+			max-width: 100%;
+			margin-top: 100px;
+			
 
-	.prerow {
-		text-align: center;
-		padding-top:50px;
-		padding-bottom: 30px;
-		line-height: 50px;
+			h1 {
+				font-size: 30px;
+				font-weight: 100;
+				color:#000;
+			}
 
-		h1 {
-			font-size: 30px;
-			font-weight: 100;
-			color:#000;
-		}
-
-		p {
-			font-size: 16px;
-			color:#6f6f6f;
+			p {
+				font-size: 16px;
+				color:#6f6f6f;
+			}
 		}
 	}
 }

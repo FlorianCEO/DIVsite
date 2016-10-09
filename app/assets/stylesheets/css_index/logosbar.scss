@@ -4,10 +4,15 @@ $bgcolor:#FFFFFF;
 @media (min-width: 1200px) {
 
 	.logosbar {
+		position: absolute;
+		display: block;
+		max-width: 100%;
 		padding-top: 10px;
+		left:0;
+		right:0;
 		background-color: $bgcolor;
 		height:120px;
-		margin:0 auto;
+		margin:0 0 50px 0;
 		display: flex;
 	    align-items: center;
 	    justify-content: center;
