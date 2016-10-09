@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: design-is-vital
+  api_key: '237599868423913'
+  api_secret: LNehEKmTXjJn9Ao5dH81_M08p-c
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: design-is-vital
+  api_key: '237599868423913'
+  api_secret: LNehEKmTXjJn9Ao5dH81_M08p-c
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: design-is-vital
+  api_key: '237599868423913'
+  api_secret: LNehEKmTXjJn9Ao5dH81_M08p-c
+  enhance_image_tag: true
+  static_image_support: false

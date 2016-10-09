@@ -29,6 +29,9 @@ gem 'paperclip', '~> 5.0'
 # Fontawewsome
 gem 'font-awesome-sass'
 
+# Cloudinary
+gem 'cloudinary'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
