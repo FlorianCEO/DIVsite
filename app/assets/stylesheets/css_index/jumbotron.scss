@@ -358,7 +358,7 @@ $textcolor:#FFF;
 			background: rgba(51,51,51,0.6);
 			position: absolute;
 			left:0;
-			padding-left: 15px;
+			padding-left: 40px;
 			top:40%;
 
 
@@ -409,7 +409,7 @@ $textcolor:#FFF;
 					span.glyphicon {
 						padding-top:10px;
 						color:#FFED00 ;
-						margin-left: 10px;
+						margin-left: 40px;
 						margin-right:5px;
 					}
 			}
@@ -453,7 +453,7 @@ $textcolor:#FFF;
 			background: rgba(51,51,51,0.6);
 			position: absolute;
 			left:0;
-			padding-left: 15px;
+			padding-left: 18px;
 
 
 
@@ -462,7 +462,7 @@ $textcolor:#FFF;
 				text-align:left !important; 
 				font-family: 'Oswald', sans-serif;
 				letter-spacing: 2px;
-				line-height: 30px;
+				line-height: 45px;
 				text-transform: uppercase;
 
 
@@ -482,8 +482,8 @@ $textcolor:#FFF;
 
 		.logosmg {
 			height: auto;
-			max-width: 150px;
-			top:15px;
+			max-width: 180px;
+			top:5%;
 			position: absolute;
 		}
 
@@ -496,13 +496,14 @@ $textcolor:#FFF;
 			p { 
 				font-weight: 200;
 				font-size: 17px;
-				margin-top: 30vh;
+				margin-top: 25vh;
 				text-align: left;
 
 					span.glyphicon {
 						padding-top:10px;
 						padding-right: 5px ;
 						color:#FFED00 ;
+						margin-left: 0;
 					}
 			}
 		}
