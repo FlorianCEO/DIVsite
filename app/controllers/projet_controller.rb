@@ -6,6 +6,7 @@ class ProjetController < ApplicationController
   def show
   	@Projets = Projet.all
   	@projet = Projet.find_by(slug: params[:slug])
+    
 
   	if @projet.nil?
   		redirect_to root_path
