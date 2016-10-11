@@ -23,7 +23,8 @@ $secondarycolor:#FFED00 ;
 				letter-spacing: 2px;
 				margin-left:0;
 				margin-right:0;
-				padding-left:50px;
+				position: absolute;
+				left:30%;
 				padding-right:0;
 				display: block;
 				text-align: center;
@@ -73,9 +74,13 @@ $secondarycolor:#FFED00 ;
 			a.navbar-brand {
 				padding:0;
 				margin:0;
+				position: absolute;
+				left:7%;
+				top:8%;
 				img {
 				height: auto;
 				width: 200px;
+				
 				}
 			}
 		} 
@@ -117,7 +122,8 @@ $secondarycolor:#FFED00 ;
 				letter-spacing: 2px;
 				margin-left:0;
 				margin-right:0;
-				padding-left:150px;
+				position: absolute;
+				left:30%;
 				padding-right:0;
 				display: block;
 				text-align: center;

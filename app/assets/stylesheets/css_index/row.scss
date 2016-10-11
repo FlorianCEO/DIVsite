@@ -12,7 +12,8 @@ $secondarycolor:#979797;
 			background-color: #FFFFFF;
 
 			.col-md-4 {
-
+				height: 100%;
+				max-width: 100%;
 				h2 {
 					line-height: 60px !important;
 					color:$secondarycolor;
