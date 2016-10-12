@@ -54,7 +54,7 @@ $textcolor:#FFF;
 				font-family: 'Oswald', sans-serif;
 				letter-spacing: 3px;
 				font-weight: lighter;
-				padding-left: 150px;
+				padding-left: 120px;
 				padding-right:40px;
 				line-height: 70px;
 				text-transform: uppercase;
@@ -82,7 +82,7 @@ $textcolor:#FFF;
 			position: absolute;
 			left:0;
 			bottom:20%;
-			padding-top:10px 30px 10px 30px;
+			padding:10px 30px 10px 30px;
 			p { 
 				font-weight: lighter;
 				font-size: 25px;
@@ -93,7 +93,7 @@ $textcolor:#FFF;
 					span.glyphicon {
 						padding-top:60px;
 						padding-right: 10px ;
-						padding-left: 100px ;
+						padding-left: 40px ;
 						color:#FFED00 ;
 					}
 			}
@@ -156,8 +156,8 @@ $textcolor:#FFF;
 				text-align:left !important; 
 				font-family: 'Oswald', sans-serif;
 				letter-spacing: 2px;
-				padding-left: 150px;
-				line-height: 50px;
+				padding-left: 40px;
+				line-height: 70px;
 				text-transform: uppercase;
 
 
@@ -187,17 +187,17 @@ $textcolor:#FFF;
 		.wrapper_text {
 			position: absolute;
 			left:0;
-			padding-top:10px 30px 10px 30px;
+			padding:10px 30px 10px 0px;
 			p { 
 				font-weight: lighter;
 				font-size: 22px;
-				margin-top: 20vh;
+				margin-top: 25vh;
 				padding-left: 50px;
 				letter-spacing: 1px;
 					span.glyphicon {
 						padding-top:60px;
 						padding-right: 10px ;
-						padding-left: 120px ;
+						padding-left: 20px ;
 						color:#FFED00 ;
 					}
 			}
@@ -258,7 +258,7 @@ $textcolor:#FFF;
 				text-align:left !important; 
 				font-family: 'Oswald', sans-serif;
 				letter-spacing: 2px;
-				padding-left: 80px;
+				padding-left: 70px;
 				line-height: 50px;
 				text-transform: uppercase;
 
@@ -305,7 +305,7 @@ $textcolor:#FFF;
 		.wrapper_text {
 			position: absolute;
 			left:0;
-			padding-top:10px 30px 10px 30px;
+			padding:10px 30px 10px 0px;
 			p { 
 				font-weight: lighter;
 				font-size: 20px;
@@ -315,7 +315,7 @@ $textcolor:#FFF;
 					span.glyphicon {
 						padding-top:60px;
 						padding-right: 10px ;
-						padding-left: 50px ;
+						padding-left: 20px ;
 						color:#FFED00 ;
 					}
 			}

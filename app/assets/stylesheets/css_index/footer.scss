@@ -1,5 +1,6 @@
 $primarycolor:#FFF;
 $secondarycolor:#FFED00 ;
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 
@@ -37,17 +38,20 @@ $secondarycolor:#FFED00 ;
 						li {
 						list-style: none !important;
 						text-align: left;
-						font-size: 11px;
+						
 
 							a {
 							color:#292929;
 							opacity: 0.8;
 							letter-spacing: 2px;
 							font-weight: 200;
+							font-size: 11px;
+
 								&:hover {
-									color:#292929;
+									color:$secondarycolor;
 									text-decoration: none;
 									opacity: 1;
+									font-size: 12px;
 								}
 							}
 						}
@@ -127,9 +131,10 @@ $secondarycolor:#FFED00 ;
 							letter-spacing: 2px;
 							font-weight: 200;
 								&:hover {
-									color:#292929;
 									text-decoration: none;
 									opacity: 1;
+									color:$secondarycolor;
+									font-size: 12px;
 								}
 							}
 						}

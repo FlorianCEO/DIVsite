@@ -1,35 +1,33 @@
-	<div class="block">
+	
+  <div class="block">
         <div class="container">
           <img class="logosmg" alt="logo designisvital" src="http://res.cloudinary.com/design-is-vital/image/upload/v1476101591/LOGO5-06_lmqkuj.png">
           <br>
           <h1>Nos Réalisations</h1>
           <p>Toutes nos réalisations sont faites avec amour </p>
         </div>
-    </div>  
+  </div>  
 
-        <div class="space"></div>
+  <div class="prerow">
+    <h1>Nos clients nous ont fait confiance. </h1>
+        <p>Notre prochain projet sera peut-être le vôtre ?</p>
+  </div>
 
-        <div class="prerow">
-              <h1>Nos clients nous ont fait confiance. </h1>
-              <p>Notre prochain projet sera peut-être le vôtre</p>
+
+
+  <div class="bodyprojet">
+    <% @Projets.limit(15).in_groups_of(6, false).each do |group| %>
+        <div class="row">
+          <% group.each do |projet| %>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a href="<%= projet_path(projet.slug) %>"><div class="thumbnail">
+                  <img src="<%= projet.image.url(:medium) %>" alt="<% projet.title %>">
+                  <span class="text"><span class="glyphicon glyphicon-eye-open"></span>Voir le projet</span>
+                </div></a>
+              </div>
+          <% end %>
         </div>
-
-        <div class="space"></div>
-
-
-<div class="bodyprojet">
-  <% @Projets.limit(15).in_groups_of(6, false).each do |group| %>
-      <div class="row">
-        <% group.each do |projet| %>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-              <a href="<%= projet_path(projet.slug) %>"><div class="thumbnail">
-                <img src="<%= projet.image.url(:medium) %>" alt="<% projet.title %>">
-                <span class="text"><span class="glyphicon glyphicon-eye-open"></span>Voir le projet</span>
-              </div></a>
-            </div>
-        <% end %>
-      </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
 
 
