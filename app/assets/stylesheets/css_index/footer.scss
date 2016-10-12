@@ -258,7 +258,7 @@ $secondarycolor:#FFED00 ;
 
 	.footer {
 		height:40vh;
-		margin-top: 0px;
+		margin-top: 20px;
 		background-color: #FFFFFF;
 		color:#292929;
 		text-align: left !important;
@@ -355,7 +355,7 @@ $secondarycolor:#FFED00 ;
 		color:#292929;
 		text-align: left !important;
 		position: relative;
-		margin:0;
+		margin:0px;
 
 
 		.container {
@@ -363,7 +363,7 @@ $secondarycolor:#FFED00 ;
 			.row {
 				position: absolute;
 				z-index: 1;
-				padding-top: 20px;
+				padding-top: 40px;
 				width: 90%;
 				margin:0;
 
@@ -381,7 +381,7 @@ $secondarycolor:#FFED00 ;
 					p {
 						text-align: left !important;
 						opacity: 0.9;
-						font-size: 15px;
+						font-size: 12px;
 						font-weight: 200;
 					}
 
