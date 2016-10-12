@@ -71,6 +71,10 @@ $bgcolor:#FFFFFF;
 		display: none;
 	}
 
+	hr {
+		display: none;
+	}
+
 }
 
 /* Landscape phones and portrait tablets */
@@ -84,6 +88,10 @@ $bgcolor:#FFFFFF;
 		display: none;
 	}
 
+	hr {
+		display: none;
+	}
+
 }
 
 /* Portrait phones and smaller */
@@ -94,6 +102,10 @@ $bgcolor:#FFFFFF;
 	}
 
 	.nosoutils {
+		display: none;
+	}
+
+	hr {
 		display: none;
 	}
 
