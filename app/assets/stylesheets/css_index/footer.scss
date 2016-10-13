@@ -350,7 +350,6 @@ $secondarycolor:#FFED00 ;
 @media (max-width: 480px) {
 	.footer {
 		height:40vh;
-		margin-top: 0px;
 		background-color: #FFFFFF;
 		color:#292929;
 		text-align: left !important;
@@ -359,23 +358,27 @@ $secondarycolor:#FFED00 ;
 
 
 		.container {
-			margin:0;
+			margin:0 !important;
+			padding: 0 !important;
 			.row {
 				position: absolute;
 				z-index: 1;
 				padding-top: 40px;
 				width: 90%;
 				margin:0;
+				padding: 0;
 
 				.col-xs-6.col-sm-3 { 
-					display: block;
-					float: left;
-					margin: 0px 0px 40px 0px;
+					margin: 0;
+					padding: 30px 20px 0px 25px;
 
 					.logofooter {
-						padding-top: 12px;
+						padding:12px 0 0 0 ;
 						width: 150px;
 						height: auto;
+						margin: 0;
+						text-align: left;
+						display: block;
 					}
 
 					p {
@@ -388,6 +391,7 @@ $secondarycolor:#FFED00 ;
 					ul.foot {
 						line-height: 30px;
 						margin: 0 !important;
+						padding:40px !important;
 
 						li {
 						list-style: none !important;
