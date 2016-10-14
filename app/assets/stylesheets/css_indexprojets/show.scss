@@ -4,7 +4,7 @@ $maincolor:#FFED00;
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 	.show {
-		text-align: center;
+		text-align: center !important;
 		hr.top_title {
 	    border: 0;
 	    height: 1px;
@@ -23,9 +23,8 @@ $maincolor:#FFED00;
 		.imgshowprojet {
 			max-width: 100%;
 			max-height: 100%;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
+			margin-left: 0;
+			margin-right: 0;
 			margin:0px;
 		}
 
@@ -74,10 +73,7 @@ $maincolor:#FFED00;
 		.imgshowprojet {
 			width: 600px;
 			height: auto;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top:30px;
+			margin:30px auto 30px auto;
 		}
 
 		p.align-center {
@@ -127,10 +123,7 @@ $maincolor:#FFED00;
 		.imgshowprojet {
 			width: 500px;
 			height: auto;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top:30px;
+			margin:30px auto 30px auto;
 		}
 
 		p.align-center {
@@ -178,10 +171,7 @@ $maincolor:#FFED00;
 		.imgshowprojet {
 			width: 340px;
 			height: auto;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top:30px;
+			margin:30px auto 30px auto;
 		}
 
 		p.align-center {
@@ -229,10 +219,7 @@ $maincolor:#FFED00;
 		.imgshowprojet {
 			width: 280px;
 			height: auto;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top:30px;
+			margin:30px auto 30px auto;
 		}
 
 		p.align-center {
