@@ -20,7 +20,7 @@ gem 'administrate', '~> 0.2.2'
 # security admin
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
-# Nécessaire pour faire tourner Administrate 
+# Nécessaire pour faire tourner Administrate
 gem 'bourbon'
 
 # Gestion des images
