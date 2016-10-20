@@ -5,7 +5,7 @@
           <h1>Le Blog</h1>
           <p> de l'agence Design is Vital</p>
         </div>
-    </div>  
+    </div>
 
     <div class="prerow">
         <h1> Apprendre tous les jours comment maitriser l'UX </h1>
@@ -13,7 +13,7 @@
     </div>
 
 <div class="bodyprojet">
-    <% @articles.order(position: :desc).each do |article| %>
+    <% @articles.each do |article| %>
     <ul class="list-unstyled">
         <li class="product">
           <div class="product-upvote text-center">
@@ -33,5 +33,5 @@
           </div>
         </li>
     </ul>
-  <% end %>  
+  <% end %>
 </div>
