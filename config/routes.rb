@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/mentionslegales' => 'pages#mentionslegales'
 
   namespace :admin do
-    root to: "projets#index"
+    root to: "projets#index", as: 'administrate'
     resources :projets
     resources :articles
     resources :users
