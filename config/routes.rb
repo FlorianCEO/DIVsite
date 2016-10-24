@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     resources :articles
     resources :users
     # get '/'  => 'projets#index'
-    root to: "projets#index", as: :adpro_root
+    root to: "projets#index"
 
   end
 
