@@ -25,6 +25,7 @@ end
     resources :articles
     resources :users
     # get '/'  => 'projets#index'
+    root to: "projets#index"
   end
 
 
