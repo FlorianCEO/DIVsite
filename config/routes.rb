@@ -20,12 +20,13 @@ Rails.application.routes.draw do
   end
 end
 
-  namespace :admin, except: :admin_path do
+  namespace :admin do
     resources :projets
     resources :articles
     resources :users
     # get '/'  => 'projets#index'
-    root to: "projets#index"
+    # root to: "projets#index"
+    root to: "admin/projets#index"
   end
 
 
