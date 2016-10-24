@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   end
 end
 
-  namespace :admin do
+  namespace :admin, except: :admin_path do
     resources :projets
     resources :articles
     resources :users
