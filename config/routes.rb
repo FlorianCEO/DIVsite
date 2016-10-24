@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     resources :projets
     resources :articles
     resources :users
-
+    get '/'  => 'projets#index'
 
   end
 
