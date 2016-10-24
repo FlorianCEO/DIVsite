@@ -1,4 +1,4 @@
 # config/initializers/administrate.rb
-Administrate.configure do |config|
+Administrate.config do |config|
   config.routes = false
 end
