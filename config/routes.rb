@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   get '/mentionslegales' => 'pages#mentionslegales'
 
   namespace :admin do
-    #root to: "projets#index"
-    match "/" => 'projets#index', via: :root
+    # root to: "projets#index"
+    match "/projets" => 'projets#index', via: :root
     resources :projets
     resources :articles
     resources :users
