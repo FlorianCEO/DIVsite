@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 end
 
   namespace :admin do
-    root to: "projets#index"
+    root to: "articles#index"
     resources :projets
     resources :articles
     resources :users
