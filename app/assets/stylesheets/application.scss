@@ -1,23 +1,23 @@
 @import "bourbon";
-@import url('css_index/list.scss');
-@import url('css_index/logosbar.scss');
-@import url('css_index/navbar.scss');
-@import url('css_index/cssmethodepage.scss');
-@import url('css_index/wrapper.scss');
-@import url('css_index/jumbotron.scss');
-@import url('css_index/cards.scss');
-@import url('css_index/avatar.scss');
-@import url('css_index/blockmethode.scss');
-@import url('css_index/row.scss');
-@import url('css_index/rowmethode.scss');
-@import url('css_index/prerow.scss');
-@import url('css_index/prerow2.scss');
-@import url('css_index/agence.scss');
-@import url('css_index/mentionslegales.scss');
-@import url('css_index/footer.scss');
-@import url('css_index/projetshome.scss');
-@import url('css_indexprojets/show.scss');
-@import url('css_indexprojets/bodyprojet.scss');
+@import url('css_index/_list.scss');
+@import url('css_index/_logosbar.scss');
+@import url('css_index/_navbar.scss');
+@import url('css_index/_cssmethodepage.scss');
+@import url('css_index/_wrapper.scss');
+@import url('css_index/_jumbotron.scss');
+@import url('css_index/_cards.scss');
+@import url('css_index/_avatar.scss');
+@import url('css_index/_blockmethode.scss');
+@import url('css_index/_row.scss');
+@import url('css_index/_rowmethode.scss');
+@import url('css_index/_prerow.scss');
+@import url('css_index/_prerow2.scss');
+@import url('css_index/_agence.scss');
+@import url('css_index/_mentionslegales.scss');
+@import url('css_index/_footer.scss');
+@import url('css_index/_projetshome.scss');
+@import url('css_indexprojets/_show.scss');
+@import url('css_indexprojets/_bodyprojet.scss');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @import "font-awesome-sprockets";
 @import "font-awesome";
@@ -61,7 +61,7 @@
 		background-color: #FFF;
 		z-index:10;
 		position: relative;
-	}	
+	}
 
 }
 
@@ -81,7 +81,7 @@
 
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 	html, body {
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 		font-weight: 200;
