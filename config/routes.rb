@@ -21,12 +21,11 @@ Rails.application.routes.draw do
 end
 
   namespace :admin do
+    root to: "projets#index"
     resources :projets
     resources :articles
     resources :users
     # get '/'  => 'projets#index'
-    root to: "projets#index"
-
   end
 
 
