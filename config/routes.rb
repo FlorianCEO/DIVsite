@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/mentionslegales' => 'pages#mentionslegales'
 
 
-  namespace :admin do
+  namespace :admin, except: :add_root do
     resources :projets
     resources :articles
     resources :users
