@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160810081933) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
@@ -28,7 +31,7 @@ ActiveRecord::Schema.define(version: 20160810081933) do
     t.integer  "position"
   end
 
-  add_index "articles", ["user_id"], name: "index_articles_on_user_id"
+  add_index "articles", ["user_id"], name: "index_articles_on_user_id", using: :btree
 
   create_table "projets", force: :cascade do |t|
     t.string   "title"
@@ -52,4 +55,5 @@ ActiveRecord::Schema.define(version: 20160810081933) do
     t.datetime "image_updated_at"
   end
 
+  add_foreign_key "articles", "users"
 end
