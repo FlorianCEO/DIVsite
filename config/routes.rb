@@ -14,7 +14,6 @@ Rails.application.routes.draw do
     resources :projets
     resources :articles
     resources :users
-    root to: "projets#index"
 
   end
 
