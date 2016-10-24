@@ -10,15 +10,6 @@ Rails.application.routes.draw do
   get '/mentionslegales' => 'pages#mentionslegales'
 
 
-  namespace :admin do
-    resources :projets
-    resources :articles
-    resources :users
-    # get '/'  => 'projets#index'
-    root to: "projets#index"
-
-  end
-
   if defined?(DashboardManifest)
   namespace :admin do
     DashboardManifest::DASHBOARDS.each do |dashboard_resource|
@@ -28,6 +19,17 @@ Rails.application.routes.draw do
     root controller: DashboardManifest::ROOT_DASHBOARD, action: :index
   end
 end
+
+  namespace :admin do
+    resources :projets
+    resources :articles
+    resources :users
+    # get '/'  => 'projets#index'
+    root to: "projets#index"
+
+  end
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
