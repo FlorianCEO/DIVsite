@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     # root to: "projets#index"
-    match "/projets" => 'projets#index', via: :root
+    match "/projets" => 'projets#index', via: :root, as: "admin_root"
     resources :projets
     resources :articles
     resources :users
