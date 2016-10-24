@@ -11,11 +11,11 @@ Rails.application.routes.draw do
 
 
   namespace :admin do
-    resources :projets
+    resources :projets, except: :index
     resources :articles
     resources :users
     # get '/'  => 'projets#index'
-    root to: "projets#index"
+    root to: "projets#index", as: :adminprojets_root
 
   end
 
