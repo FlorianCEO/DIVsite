@@ -12,4 +12,9 @@ class ProjetController < ApplicationController
   		redirect_to root_path
   	end
   end
+  private
+
+  def projet_params
+    params.require(:projet).permit(:image)
+  end
 end
