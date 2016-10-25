@@ -40,7 +40,17 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   # Gestion et upload des images (Paperclip et ImageMagik)
-  Paperclip.options[:command_path] = "/usr/local/bin/"
+  # Paperclip.options[:command_path] = "/usr/local/bin/"
+  config.paperclip.defaults = {
+      storage: :s3,
+      s3_host_name: 's3-eu-west-1.amazonaws.com',
+      s3_credentials: {
+        access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
+        secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
+        s3_region: ENV.fetch('AWS_REGION'),
+      },
+      bucket: ENV.fetch('S3_BUCKET_NAME'),
+  }
 
   #config.paperclip_defaults = {
   #  :storage => :s3,
