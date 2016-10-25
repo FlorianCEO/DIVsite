@@ -1,12 +1,12 @@
 development:
- access_key_id: ENV['S3_KEY']
- secret_access_key: ENV['S3_SECRET']
- s3_region: ENV['AWS_REGION']
+ access_key_id: AWS_ACCESS_KEY_ID
+ secret_access_key: AWS_SECRET_KEY_ID
+ s3_region: AWS_REGION
 
 production:
- access_key_id: ENV['S3_KEY']
- secret_access_key: ENV['S3_SECRET']
- s3_region: ENV['AWS_REGION']
+ access_key_id: AWS_ACCESS_KEY_ID
+ secret_access_key: AWS_SECRET_KEY_ID
+ s3_region: AWS_REGION
 
 
 
