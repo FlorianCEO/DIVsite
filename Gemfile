@@ -32,6 +32,10 @@ gem 'bourbon'
 # Gestion des images
 gem 'paperclip', '~> 5.0'
 
+# aws gem to use S3 for image storage
+gem 'aws-sdk', '~> 2.3'
+
+
 # Fontawewsome
 gem 'font-awesome-sass'
 
