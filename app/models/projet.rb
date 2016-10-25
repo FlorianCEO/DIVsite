@@ -3,5 +3,6 @@ class Projet < ActiveRecord::Base
     :storage => :s3,
     :s3_credentials => "#{Rails.root}/config/aws.yml",
     :bucket => "divsite"
+
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 end
