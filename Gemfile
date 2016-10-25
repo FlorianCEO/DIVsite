@@ -33,7 +33,7 @@ gem 'bourbon'
 gem 'paperclip', '~> 5.0'
 
 # aws gem to use S3 for image storage
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk', '~> 2.0'
 
 
 # Fontawewsome
