@@ -11,4 +11,10 @@ class ArticleController < ApplicationController
   	end
   	@user = User.all
   end
+
+  private
+
+  def projet_params
+    params.require(:projet).permit(:image)
+  end
 end
