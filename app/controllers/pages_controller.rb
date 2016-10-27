@@ -1,4 +1,10 @@
 class PagesController < ApplicationController
+
+  def comingsoon
+    @disable_nav = true
+  end
+
+
   def index
   	@articles = Article.all
     @Projets = Projet.all
@@ -23,10 +29,6 @@ class PagesController < ApplicationController
   if @article.nil?
   		redirect_to root_path
   end
-  end
-
-  def comingsoon
-    @disable_nav = true
   end
 
 end
