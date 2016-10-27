@@ -15,6 +15,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Permanent+Marker|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">    <title>Design is Vital</title>
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,81 +30,10 @@
     </head>
     <body>
 
-			<nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar top-bar"></span>
-              <span class="icon-bar middle-bar"></span>
-              <span class="icon-bar bottom-bar"></span>
-            </button>
-            <a class="navbar-brand" href="<%= root_path %>">
-              <%= image_tag("http://res.cloudinary.com/design-is-vital/image/upload/v1476101591/LOGO5-06_lmqkuj.png", :class => "Brand")%>
-            </a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-left">
-              <li><%= link_to "ACCUEIL", root_path %></li>
-              <li><%= link_to "AGENCE", agence_path %></li>
-              <li><%= link_to "RÉALISATIONS", projets_path %></li>
-              <li><%= link_to "MÉTHODE", methode_path %></li>
-              <!--<li><a href="https://fr.pinterest.com/designisvital75/" target="_blanc">INSPIRATION</a></li>-->
-              <li><%= link_to "BLOG", article_path %></li>
-              <li><%= link_to "CONTACT", contact_path %></li>
-            </ul>
-
-            <ul class="social navbar-right">
-              <li><a href="http://facebook.com/designisvital"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.instagram.com/designisvital/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="https://fr.pinterest.com/designisvital75/"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
-              <li><a href="https://twitter.com/design_is_vital"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-            </ul>
-          </div><!--/.navbar-collapse -->
-        </div>
-      </nav>
+      <%= render "layouts/partials/nav" unless @disable_nav %>
 			<%= yield %>
-			<hr>
-      <div class="footer">
-        <div class="container">
-            <!-- <img src="http://unsplash.it/250/250/?random" alt="" class="avatar logofooter">-->
-          <div class="row">
+      <%= render "layouts/partials/footer" unless @disable_nav %>
 
-            <div class="col-xs-6 col-sm-3">
-              <%= image_tag("http://res.cloudinary.com/design-is-vital/image/upload/v1476101591/LOGO4-05_rk90ex.png", :class => "logofooter")%>
-            </div>
-
-            <div class="col-xs-6 col-sm-3">
-              <h5>DESIGN IS VITAL</h5><p>  3, Sente du Clos d'Arcy <br> 78300 POISSY <br> </p><h5>Tel : 01 00 00 00 00 <br> contact@designisvital.co </h5>
-            </div>
-
-            <div class="col-xs-6 col-sm-3">
-             <ul class="foot">
-              <li><h5>L'AGENCE</h5></li>
-              <li><%= link_to "ACCUEIL", root_path %></li>
-               <li><%= link_to "AGENCE", agence_path %></li>
-               <li><%= link_to "RÉALISATIONS", projets_path %></li>
-               <li><%= link_to "MÉTHODE", methode_path %></li>
-               <li><a href="https://fr.pinterest.com/designisvital75/" target="_blanc">INSPIRATION</a></li>
-               <li><%= link_to "BLOG", article_path %></li>
-             </ul>     
-           </div>
-
-           <div class="col-xs-6 col-sm-3">
-            <ul class="foot">
-             <li><h5>INFOS</h5></li>
-             <li><%= link_to "CONTACT", contact_path %></li> 
-             <li><%= link_to "MENTIONS LEGALES", mentionslegales_path %></li>
-           </ul>    
-           <ul class="socialfoot">
-              <li><h5>SUIVEZ-NOUS</h5></li><br>
-              <li><a href="http://facebook.com/designisvital"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.instagram.com/designisvital/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="https://fr.pinterest.com/designisvital75/"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
-              <li><a href="https://twitter.com/design_is_vital"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-           </ul>  
-        </div>
-      </div>
 
 
         <!-- Bootstrap core JavaScript

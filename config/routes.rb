@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#index'
+  #root 'pages#index'
   get '/agence' => 'pages#agence'
   get '/methode' => 'pages#methode'
   get 'projets' => 'projet#index'
@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/article/:slug' => 'article#show', as: 'articles'
   get '/contact' => 'pages#contact'
   get '/mentionslegales' => 'pages#mentionslegales'
+  root 'pages#comingsoon'
 
   namespace :admin do
     root to: "projets#index"

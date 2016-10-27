@@ -16,13 +16,17 @@ class PagesController < ApplicationController
   def mentionslegales
   end
 
-  def show  
+  def show
 
   	@article = Article.find_by(slug: params[:slug])
 
   if @article.nil?
   		redirect_to root_path
   end
+  end
+
+  def comingsoon
+    @disable_nav = true
   end
 
 end
