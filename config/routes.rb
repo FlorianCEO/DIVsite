@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   #root 'pages#index'
-  get '/agence' => 'pages#agence'
-  get '/methode' => 'pages#methode'
-  get 'projets' => 'projet#index'
-  get 'projets/:slug' => 'projet#show', as: 'projet'
-  get '/article' => 'article#index'
-  get '/article/:slug' => 'article#show', as: 'articles'
-  get '/contact' => 'pages#contact'
-  get '/mentionslegales' => 'pages#mentionslegales'
+  #get '/agence' => 'pages#agence'
+  #get '/methode' => 'pages#methode'
+  #get 'projets' => 'projet#index'
+  #get 'projets/:slug' => 'projet#show', as: 'projet'
+  #get '/article' => 'article#index'
+  #get '/article/:slug' => 'article#show', as: 'articles'
+  #get '/contact' => 'pages#contact'
+  #get '/mentionslegales' => 'pages#mentionslegales'
   root 'pages#comingsoon'
 
   namespace :admin do
