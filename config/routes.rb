@@ -1,23 +1,23 @@
 Rails.application.routes.draw do
-  #root 'pages#index'
-  #get '/agence' => 'pages#agence'
-  #get '/methode' => 'pages#methode'
-  #get 'projets' => 'projet#index'
-  #get 'projets/:slug' => 'projet#show', as: 'projet'
-  #get '/article' => 'article#index'
-  #get '/article/:slug' => 'article#show', as: 'articles'
-  #get '/contact' => 'pages#contact'
-  #get '/mentionslegales' => 'pages#mentionslegales'
-  root 'pages#comingsoon'
+  root 'pages#index'
+  get '/agence' => 'pages#agence'
+  get '/methode' => 'pages#methode'
+  get 'projets' => 'projet#index'
+  get 'projets/:slug' => 'projet#show', as: 'projet'
+  get '/article' => 'article#index'
+  get '/article/:slug' => 'article#show', as: 'articles'
+  get '/contact' => 'pages#contact'
+  get '/mentionslegales' => 'pages#mentionslegales'
+  #root 'pages#comingsoon'
 
-  #namespace :admin do
-  #  root to: "projets#index"
-  #  resources :projets
-  #  resources :articles
-  #  resources :users
+  namespace :admin do
+    root to: "projets#index"
+    resources :projets
+    resources :articles
+    resources :users
     # get '/'  => 'projets#index'
     # match "/projets" => 'projets#index', via: :root, as: "admin_root"
-  #end
+  end
 
 
 
